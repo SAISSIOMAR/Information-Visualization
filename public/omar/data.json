@@ -1,0 +1,5370 @@
+{
+  "J-Rock": {
+    "NbSongsPerYears": [
+      {
+        "year": "2011",
+        "NbSongs": 5
+      },
+      {
+        "year": "2012",
+        "NbSongs": 3
+      },
+      {
+        "year": "2008",
+        "NbSongs": 3
+      },
+      {
+        "year": "2009",
+        "NbSongs": 6
+      },
+      {
+        "year": "1988",
+        "NbSongs": 3
+      },
+      {
+        "year": "1989",
+        "NbSongs": 3
+      },
+      {
+        "year": "1990",
+        "NbSongs": 4
+      },
+      {
+        "year": "1991",
+        "NbSongs": 3
+      },
+      {
+        "year": "1992",
+        "NbSongs": 2
+      },
+      {
+        "year": "1994",
+        "NbSongs": 1
+      },
+      {
+        "year": "1995",
+        "NbSongs": 2
+      },
+      {
+        "year": "1996",
+        "NbSongs": 2
+      },
+      {
+        "year": "1997",
+        "NbSongs": 2
+      },
+      {
+        "year": "1999",
+        "NbSongs": 1
+      },
+      {
+        "year": "2000",
+        "NbSongs": 2
+      },
+      {
+        "year": "2002",
+        "NbSongs": 3
+      },
+      {
+        "year": "2003",
+        "NbSongs": 2
+      },
+      {
+        "year": "2005",
+        "NbSongs": 3
+      },
+      {
+        "year": "2006",
+        "NbSongs": 3
+      },
+      {
+        "year": "2007",
+        "NbSongs": 6
+      },
+      {
+        "year": "2015",
+        "NbSongs": 3
+      },
+      {
+        "year": "2010",
+        "NbSongs": 1
+      },
+      {
+        "year": "2014",
+        "NbSongs": 1
+      },
+      {
+        "year": "1987",
+        "NbSongs": 2
+      },
+      {
+        "year": "1993",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Perfect World",
+        "rank": 97108
+      },
+      {
+        "title": "Splash!",
+        "rank": 100000
+      },
+      {
+        "title": "Green-Bird",
+        "rank": 113648
+      }
+    ]
+  },
+  "Visual Kei": {
+    "NbSongsPerYears": [
+      {
+        "year": "2011",
+        "NbSongs": 5
+      },
+      {
+        "year": "2012",
+        "NbSongs": 3
+      },
+      {
+        "year": "2005",
+        "NbSongs": 3
+      },
+      {
+        "year": "2006",
+        "NbSongs": 1
+      },
+      {
+        "year": "2008",
+        "NbSongs": 2
+      },
+      {
+        "year": "2009",
+        "NbSongs": 2
+      },
+      {
+        "year": "1987",
+        "NbSongs": 2
+      },
+      {
+        "year": "1988",
+        "NbSongs": 2
+      },
+      {
+        "year": "1989",
+        "NbSongs": 1
+      },
+      {
+        "year": "1990",
+        "NbSongs": 1
+      },
+      {
+        "year": "1991",
+        "NbSongs": 1
+      },
+      {
+        "year": "1993",
+        "NbSongs": 1
+      },
+      {
+        "year": "1995",
+        "NbSongs": 1
+      },
+      {
+        "year": "1996",
+        "NbSongs": 1
+      },
+      {
+        "year": "1997",
+        "NbSongs": 1
+      },
+      {
+        "year": "2000",
+        "NbSongs": 1
+      },
+      {
+        "year": "2002",
+        "NbSongs": 1
+      },
+      {
+        "year": "2003",
+        "NbSongs": 1
+      },
+      {
+        "year": "2007",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Gensou No Hana",
+        "rank": 181342
+      },
+      {
+        "title": "Romance",
+        "rank": 182854
+      },
+      {
+        "title": "Glamorous",
+        "rank": 227634
+      }
+    ]
+  },
+  "Garage Rock": {
+    "NbSongsPerYears": [
+      {
+        "year": "2001",
+        "NbSongs": 1
+      },
+      {
+        "year": "2004",
+        "NbSongs": 1
+      },
+      {
+        "year": "2000",
+        "NbSongs": 1
+      },
+      {
+        "year": "2012",
+        "NbSongs": 2
+      },
+      {
+        "year": "2015",
+        "NbSongs": 5
+      },
+      {
+        "year": "2007",
+        "NbSongs": 1
+      },
+      {
+        "year": "2009",
+        "NbSongs": 2
+      },
+      {
+        "year": "2011",
+        "NbSongs": 1
+      },
+      {
+        "year": "1966",
+        "NbSongs": 1
+      },
+      {
+        "year": "1967",
+        "NbSongs": 1
+      },
+      {
+        "year": "1968",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "I Don't Wanna, It'll Hurt",
+        "rank": 573
+      },
+      {
+        "title": "My Name Is Satan",
+        "rank": 54809
+      },
+      {
+        "title": "Pipe Dream",
+        "rank": 62476
+      }
+    ]
+  },
+  "Punk Rock": {
+    "NbSongsPerYears": [
+      {
+        "year": "2002",
+        "NbSongs": 25
+      },
+      {
+        "year": "2007",
+        "NbSongs": 24
+      },
+      {
+        "year": "2008",
+        "NbSongs": 21
+      },
+      {
+        "year": "2009",
+        "NbSongs": 15
+      },
+      {
+        "year": "2011",
+        "NbSongs": 11
+      },
+      {
+        "year": "2013",
+        "NbSongs": 9
+      },
+      {
+        "year": "2015",
+        "NbSongs": 3
+      },
+      {
+        "year": "1996",
+        "NbSongs": 17
+      },
+      {
+        "year": "1998",
+        "NbSongs": 23
+      },
+      {
+        "year": "1999",
+        "NbSongs": 26
+      },
+      {
+        "year": "2000",
+        "NbSongs": 20
+      },
+      {
+        "year": "2001",
+        "NbSongs": 20
+      },
+      {
+        "year": "2006",
+        "NbSongs": 22
+      },
+      {
+        "year": "1984",
+        "NbSongs": 2
+      },
+      {
+        "year": "1986",
+        "NbSongs": 5
+      },
+      {
+        "year": "1987",
+        "NbSongs": 3
+      },
+      {
+        "year": "1989",
+        "NbSongs": 10
+      },
+      {
+        "year": "1992",
+        "NbSongs": 8
+      },
+      {
+        "year": "2004",
+        "NbSongs": 16
+      },
+      {
+        "year": "1980",
+        "NbSongs": 2
+      },
+      {
+        "year": "1981",
+        "NbSongs": 4
+      },
+      {
+        "year": "1982",
+        "NbSongs": 5
+      },
+      {
+        "year": "1988",
+        "NbSongs": 4
+      },
+      {
+        "year": "1990",
+        "NbSongs": 7
+      },
+      {
+        "year": "1991",
+        "NbSongs": 3
+      },
+      {
+        "year": "1993",
+        "NbSongs": 9
+      },
+      {
+        "year": "1994",
+        "NbSongs": 15
+      },
+      {
+        "year": "1995",
+        "NbSongs": 6
+      },
+      {
+        "year": "2014",
+        "NbSongs": 8
+      },
+      {
+        "year": "2003",
+        "NbSongs": 21
+      },
+      {
+        "year": "2005",
+        "NbSongs": 22
+      },
+      {
+        "year": "2010",
+        "NbSongs": 12
+      },
+      {
+        "year": "1997",
+        "NbSongs": 13
+      },
+      {
+        "year": "2012",
+        "NbSongs": 9
+      },
+      {
+        "year": "1983",
+        "NbSongs": 3
+      },
+      {
+        "year": "1985",
+        "NbSongs": 2
+      },
+      {
+        "year": "1976",
+        "NbSongs": 1
+      },
+      {
+        "year": "1978",
+        "NbSongs": 2
+      },
+      {
+        "year": "1979",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Problems",
+        "rank": 3
+      },
+      {
+        "title": "Warbrain",
+        "rank": 4
+      },
+      {
+        "title": "Warbrain",
+        "rank": 4
+      }
+    ]
+  },
+  "Hip Hop": {
+    "NbSongsPerYears": [
+      {
+        "year": "2009",
+        "NbSongs": 20
+      },
+      {
+        "year": "2011",
+        "NbSongs": 20
+      },
+      {
+        "year": "2005",
+        "NbSongs": 16
+      },
+      {
+        "year": "2013",
+        "NbSongs": 11
+      },
+      {
+        "year": "2015",
+        "NbSongs": 8
+      },
+      {
+        "year": "2010",
+        "NbSongs": 20
+      },
+      {
+        "year": "1992",
+        "NbSongs": 3
+      },
+      {
+        "year": "1993",
+        "NbSongs": 5
+      },
+      {
+        "year": "2004",
+        "NbSongs": 17
+      },
+      {
+        "year": "2006",
+        "NbSongs": 27
+      },
+      {
+        "year": "1986",
+        "NbSongs": 2
+      },
+      {
+        "year": "1999",
+        "NbSongs": 8
+      },
+      {
+        "year": "2001",
+        "NbSongs": 14
+      },
+      {
+        "year": "2003",
+        "NbSongs": 13
+      },
+      {
+        "year": "2008",
+        "NbSongs": 24
+      },
+      {
+        "year": "1998",
+        "NbSongs": 4
+      },
+      {
+        "year": "2000",
+        "NbSongs": 13
+      },
+      {
+        "year": "2014",
+        "NbSongs": 19
+      },
+      {
+        "year": "1994",
+        "NbSongs": 5
+      },
+      {
+        "year": "1995",
+        "NbSongs": 5
+      },
+      {
+        "year": "1996",
+        "NbSongs": 3
+      },
+      {
+        "year": "2007",
+        "NbSongs": 19
+      },
+      {
+        "year": "1997",
+        "NbSongs": 7
+      },
+      {
+        "year": "2012",
+        "NbSongs": 15
+      },
+      {
+        "year": "2002",
+        "NbSongs": 11
+      },
+      {
+        "year": "1991",
+        "NbSongs": 2
+      },
+      {
+        "year": "1989",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Wiggle Wiggle",
+        "rank": 1
+      },
+      {
+        "title": "National Disgrace",
+        "rank": 1
+      },
+      {
+        "title": "Ore-Ore-O",
+        "rank": 5
+      }
+    ]
+  },
+  "Gangsta Rap": {
+    "NbSongsPerYears": [
+      {
+        "year": "2006",
+        "NbSongs": 1
+      },
+      {
+        "year": "2010",
+        "NbSongs": 1
+      },
+      {
+        "year": "2011",
+        "NbSongs": 1
+      },
+      {
+        "year": "2012",
+        "NbSongs": 2
+      },
+      {
+        "year": "2014",
+        "NbSongs": 1
+      },
+      {
+        "year": "2000",
+        "NbSongs": 1
+      },
+      {
+        "year": "2005",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Wishing For Tomorrow",
+        "rank": 84
+      },
+      {
+        "title": "Thinking",
+        "rank": 1822
+      },
+      {
+        "title": "Cant Take It Back",
+        "rank": 1822
+      }
+    ]
+  },
+  "Underground Hip Hop": {
+    "NbSongsPerYears": [
+      {
+        "year": "1997",
+        "NbSongs": 7
+      },
+      {
+        "year": "2000",
+        "NbSongs": 1
+      },
+      {
+        "year": "2001",
+        "NbSongs": 2
+      },
+      {
+        "year": "2003",
+        "NbSongs": 2
+      },
+      {
+        "year": "2007",
+        "NbSongs": 4
+      },
+      {
+        "year": "2012",
+        "NbSongs": 15
+      },
+      {
+        "year": "1999",
+        "NbSongs": 2
+      },
+      {
+        "year": "2002",
+        "NbSongs": 11
+      },
+      {
+        "year": "2005",
+        "NbSongs": 2
+      },
+      {
+        "year": "2006",
+        "NbSongs": 2
+      },
+      {
+        "year": "2004",
+        "NbSongs": 1
+      },
+      {
+        "year": "2010",
+        "NbSongs": 1
+      },
+      {
+        "year": "2009",
+        "NbSongs": 1
+      },
+      {
+        "year": "2011",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Someday One Day",
+        "rank": 280
+      },
+      {
+        "title": "Round And Round",
+        "rank": 308
+      },
+      {
+        "title": "Anger Management",
+        "rank": 621
+      }
+    ]
+  },
+  "Alternative Hip Hop": {
+    "NbSongsPerYears": [
+      {
+        "year": "1997",
+        "NbSongs": 7
+      },
+      {
+        "year": "2000",
+        "NbSongs": 1
+      },
+      {
+        "year": "2001",
+        "NbSongs": 2
+      },
+      {
+        "year": "2003",
+        "NbSongs": 2
+      },
+      {
+        "year": "2007",
+        "NbSongs": 4
+      },
+      {
+        "year": "2012",
+        "NbSongs": 15
+      },
+      {
+        "year": "1999",
+        "NbSongs": 2
+      },
+      {
+        "year": "2002",
+        "NbSongs": 11
+      },
+      {
+        "year": "2005",
+        "NbSongs": 2
+      },
+      {
+        "year": "2014",
+        "NbSongs": 1
+      },
+      {
+        "year": "2006",
+        "NbSongs": 4
+      },
+      {
+        "year": "2008",
+        "NbSongs": 2
+      },
+      {
+        "year": "2011",
+        "NbSongs": 2
+      },
+      {
+        "year": "1986",
+        "NbSongs": 1
+      },
+      {
+        "year": "1989",
+        "NbSongs": 1
+      },
+      {
+        "year": "1992",
+        "NbSongs": 1
+      },
+      {
+        "year": "1994",
+        "NbSongs": 2
+      },
+      {
+        "year": "1995",
+        "NbSongs": 1
+      },
+      {
+        "year": "1998",
+        "NbSongs": 1
+      },
+      {
+        "year": "2004",
+        "NbSongs": 1
+      },
+      {
+        "year": "2009",
+        "NbSongs": 2
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "The Most Important Track On The Album",
+        "rank": 66335
+      },
+      {
+        "title": "Count Contessa",
+        "rank": 114538
+      },
+      {
+        "title": "Zion I:Poems 4 Post Modern Decay",
+        "rank": 143328
+      }
+    ]
+  },
+  "Pop": {
+    "NbSongsPerYears": [
+      {
+        "year": "2014",
+        "NbSongs": 30
+      },
+      {
+        "year": "2015",
+        "NbSongs": 23
+      },
+      {
+        "year": "1982",
+        "NbSongs": 12
+      },
+      {
+        "year": "1983",
+        "NbSongs": 14
+      },
+      {
+        "year": "1984",
+        "NbSongs": 17
+      },
+      {
+        "year": "1985",
+        "NbSongs": 15
+      },
+      {
+        "year": "1986",
+        "NbSongs": 14
+      },
+      {
+        "year": "2001",
+        "NbSongs": 29
+      },
+      {
+        "year": "2007",
+        "NbSongs": 35
+      },
+      {
+        "year": "2009",
+        "NbSongs": 39
+      },
+      {
+        "year": "2012",
+        "NbSongs": 36
+      },
+      {
+        "year": "2010",
+        "NbSongs": 44
+      },
+      {
+        "year": "2003",
+        "NbSongs": 35
+      },
+      {
+        "year": "2006",
+        "NbSongs": 34
+      },
+      {
+        "year": "1998",
+        "NbSongs": 31
+      },
+      {
+        "year": "2000",
+        "NbSongs": 23
+      },
+      {
+        "year": "2002",
+        "NbSongs": 32
+      },
+      {
+        "year": "1973",
+        "NbSongs": 16
+      },
+      {
+        "year": "1974",
+        "NbSongs": 17
+      },
+      {
+        "year": "1975",
+        "NbSongs": 26
+      },
+      {
+        "year": "1976",
+        "NbSongs": 18
+      },
+      {
+        "year": "1977",
+        "NbSongs": 16
+      },
+      {
+        "year": "1979",
+        "NbSongs": 19
+      },
+      {
+        "year": "1980",
+        "NbSongs": 16
+      },
+      {
+        "year": "1981",
+        "NbSongs": 19
+      },
+      {
+        "year": "1992",
+        "NbSongs": 20
+      },
+      {
+        "year": "1993",
+        "NbSongs": 30
+      },
+      {
+        "year": "1994",
+        "NbSongs": 17
+      },
+      {
+        "year": "1999",
+        "NbSongs": 29
+      },
+      {
+        "year": "1995",
+        "NbSongs": 34
+      },
+      {
+        "year": "2005",
+        "NbSongs": 34
+      },
+      {
+        "year": "2004",
+        "NbSongs": 37
+      },
+      {
+        "year": "1991",
+        "NbSongs": 24
+      },
+      {
+        "year": "2011",
+        "NbSongs": 33
+      },
+      {
+        "year": "2013",
+        "NbSongs": 32
+      },
+      {
+        "year": "2008",
+        "NbSongs": 84
+      },
+      {
+        "year": "1987",
+        "NbSongs": 18
+      },
+      {
+        "year": "1958",
+        "NbSongs": 5
+      },
+      {
+        "year": "1972",
+        "NbSongs": 13
+      },
+      {
+        "year": "1978",
+        "NbSongs": 14
+      },
+      {
+        "year": "1997",
+        "NbSongs": 30
+      },
+      {
+        "year": "1990",
+        "NbSongs": 15
+      },
+      {
+        "year": "1996",
+        "NbSongs": 19
+      },
+      {
+        "year": "1988",
+        "NbSongs": 20
+      },
+      {
+        "year": "1967",
+        "NbSongs": 16
+      },
+      {
+        "year": "1970",
+        "NbSongs": 15
+      },
+      {
+        "year": "1969",
+        "NbSongs": 17
+      },
+      {
+        "year": "1989",
+        "NbSongs": 15
+      },
+      {
+        "year": "1968",
+        "NbSongs": 13
+      },
+      {
+        "year": "1971",
+        "NbSongs": 14
+      },
+      {
+        "year": "1966",
+        "NbSongs": 13
+      },
+      {
+        "year": "1962",
+        "NbSongs": 8
+      },
+      {
+        "year": "2016",
+        "NbSongs": 2
+      },
+      {
+        "year": "1963",
+        "NbSongs": 10
+      },
+      {
+        "year": "1964",
+        "NbSongs": 10
+      },
+      {
+        "year": "1965",
+        "NbSongs": 10
+      },
+      {
+        "year": "1959",
+        "NbSongs": 2
+      },
+      {
+        "year": "1960",
+        "NbSongs": 4
+      },
+      {
+        "year": "1961",
+        "NbSongs": 6
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Voulez-Vous (Extended Remix)",
+        "rank": 5
+      },
+      {
+        "title": "Nowhere Now",
+        "rank": 6
+      },
+      {
+        "title": "Are You Out There?",
+        "rank": 6
+      }
+    ]
+  },
+  "Pop Rock": {
+    "NbSongsPerYears": [
+      {
+        "year": "2006",
+        "NbSongs": 42
+      },
+      {
+        "year": "2007",
+        "NbSongs": 47
+      },
+      {
+        "year": "2008",
+        "NbSongs": 35
+      },
+      {
+        "year": "2009",
+        "NbSongs": 44
+      },
+      {
+        "year": "2012",
+        "NbSongs": 33
+      },
+      {
+        "year": "2013",
+        "NbSongs": 24
+      },
+      {
+        "year": "1985",
+        "NbSongs": 8
+      },
+      {
+        "year": "1990",
+        "NbSongs": 5
+      },
+      {
+        "year": "1987",
+        "NbSongs": 8
+      },
+      {
+        "year": "1991",
+        "NbSongs": 7
+      },
+      {
+        "year": "1992",
+        "NbSongs": 7
+      },
+      {
+        "year": "1995",
+        "NbSongs": 6
+      },
+      {
+        "year": "1998",
+        "NbSongs": 18
+      },
+      {
+        "year": "1999",
+        "NbSongs": 6
+      },
+      {
+        "year": "2002",
+        "NbSongs": 8
+      },
+      {
+        "year": "2004",
+        "NbSongs": 14
+      },
+      {
+        "year": "2005",
+        "NbSongs": 10
+      },
+      {
+        "year": "1974",
+        "NbSongs": 3
+      },
+      {
+        "year": "1975",
+        "NbSongs": 3
+      },
+      {
+        "year": "1977",
+        "NbSongs": 6
+      },
+      {
+        "year": "1976",
+        "NbSongs": 15
+      },
+      {
+        "year": "1978",
+        "NbSongs": 22
+      },
+      {
+        "year": "1980",
+        "NbSongs": 13
+      },
+      {
+        "year": "1981",
+        "NbSongs": 16
+      },
+      {
+        "year": "1983",
+        "NbSongs": 18
+      },
+      {
+        "year": "1993",
+        "NbSongs": 18
+      },
+      {
+        "year": "1994",
+        "NbSongs": 21
+      },
+      {
+        "year": "1982",
+        "NbSongs": 8
+      },
+      {
+        "year": "1989",
+        "NbSongs": 5
+      },
+      {
+        "year": "1996",
+        "NbSongs": 9
+      },
+      {
+        "year": "2000",
+        "NbSongs": 13
+      },
+      {
+        "year": "2014",
+        "NbSongs": 6
+      },
+      {
+        "year": "2015",
+        "NbSongs": 12
+      },
+      {
+        "year": "2010",
+        "NbSongs": 12
+      },
+      {
+        "year": "1973",
+        "NbSongs": 7
+      },
+      {
+        "year": "1984",
+        "NbSongs": 7
+      },
+      {
+        "year": "1986",
+        "NbSongs": 10
+      },
+      {
+        "year": "1988",
+        "NbSongs": 22
+      },
+      {
+        "year": "2011",
+        "NbSongs": 13
+      },
+      {
+        "year": "2001",
+        "NbSongs": 10
+      },
+      {
+        "year": "2003",
+        "NbSongs": 6
+      },
+      {
+        "year": "1979",
+        "NbSongs": 5
+      },
+      {
+        "year": "1972",
+        "NbSongs": 2
+      },
+      {
+        "year": "1968",
+        "NbSongs": 1
+      },
+      {
+        "year": "1969",
+        "NbSongs": 7
+      },
+      {
+        "year": "1997",
+        "NbSongs": 6
+      },
+      {
+        "year": "2016",
+        "NbSongs": 2
+      },
+      {
+        "year": "1970",
+        "NbSongs": 3
+      },
+      {
+        "year": "1971",
+        "NbSongs": 1
+      },
+      {
+        "year": "1953",
+        "NbSongs": 1
+      },
+      {
+        "year": "1957",
+        "NbSongs": 1
+      },
+      {
+        "year": "1965",
+        "NbSongs": 1
+      },
+      {
+        "year": "1967",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Road Song",
+        "rank": 1
+      },
+      {
+        "title": "A Hundred Hearts",
+        "rank": 2
+      },
+      {
+        "title": "Liar",
+        "rank": 5
+      }
+    ]
+  },
+  "Synthpop": {
+    "NbSongsPerYears": [
+      {
+        "year": "1985",
+        "NbSongs": 5
+      },
+      {
+        "year": "1986",
+        "NbSongs": 5
+      },
+      {
+        "year": "1988",
+        "NbSongs": 3
+      },
+      {
+        "year": "1990",
+        "NbSongs": 1
+      },
+      {
+        "year": "1993",
+        "NbSongs": 5
+      },
+      {
+        "year": "2000",
+        "NbSongs": 3
+      },
+      {
+        "year": "2002",
+        "NbSongs": 6
+      },
+      {
+        "year": "2005",
+        "NbSongs": 9
+      },
+      {
+        "year": "2009",
+        "NbSongs": 3
+      },
+      {
+        "year": "2015",
+        "NbSongs": 7
+      },
+      {
+        "year": "2007",
+        "NbSongs": 5
+      },
+      {
+        "year": "2010",
+        "NbSongs": 7
+      },
+      {
+        "year": "2014",
+        "NbSongs": 19
+      },
+      {
+        "year": "2001",
+        "NbSongs": 6
+      },
+      {
+        "year": "2003",
+        "NbSongs": 7
+      },
+      {
+        "year": "2008",
+        "NbSongs": 7
+      },
+      {
+        "year": "1984",
+        "NbSongs": 5
+      },
+      {
+        "year": "1989",
+        "NbSongs": 4
+      },
+      {
+        "year": "1992",
+        "NbSongs": 2
+      },
+      {
+        "year": "1994",
+        "NbSongs": 5
+      },
+      {
+        "year": "1997",
+        "NbSongs": 4
+      },
+      {
+        "year": "1999",
+        "NbSongs": 6
+      },
+      {
+        "year": "1996",
+        "NbSongs": 5
+      },
+      {
+        "year": "1991",
+        "NbSongs": 2
+      },
+      {
+        "year": "1998",
+        "NbSongs": 3
+      },
+      {
+        "year": "2006",
+        "NbSongs": 2
+      },
+      {
+        "year": "2011",
+        "NbSongs": 8
+      },
+      {
+        "year": "2012",
+        "NbSongs": 8
+      },
+      {
+        "year": "1987",
+        "NbSongs": 4
+      },
+      {
+        "year": "2013",
+        "NbSongs": 13
+      },
+      {
+        "year": "2016",
+        "NbSongs": 1
+      },
+      {
+        "year": "1983",
+        "NbSongs": 2
+      },
+      {
+        "year": "1995",
+        "NbSongs": 4
+      },
+      {
+        "year": "2004",
+        "NbSongs": 4
+      },
+      {
+        "year": "1980",
+        "NbSongs": 1
+      },
+      {
+        "year": "1981",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Temple",
+        "rank": 8
+      },
+      {
+        "title": "Vale",
+        "rank": 8
+      },
+      {
+        "title": "The Difference",
+        "rank": 15
+      }
+    ]
+  },
+  "Europop": {
+    "NbSongsPerYears": [
+      {
+        "year": "1973",
+        "NbSongs": 1
+      },
+      {
+        "year": "1974",
+        "NbSongs": 1
+      },
+      {
+        "year": "1975",
+        "NbSongs": 1
+      },
+      {
+        "year": "1976",
+        "NbSongs": 1
+      },
+      {
+        "year": "1977",
+        "NbSongs": 1
+      },
+      {
+        "year": "1979",
+        "NbSongs": 2
+      },
+      {
+        "year": "1980",
+        "NbSongs": 2
+      },
+      {
+        "year": "1981",
+        "NbSongs": 1
+      },
+      {
+        "year": "1982",
+        "NbSongs": 1
+      },
+      {
+        "year": "1992",
+        "NbSongs": 2
+      },
+      {
+        "year": "1993",
+        "NbSongs": 5
+      },
+      {
+        "year": "1994",
+        "NbSongs": 2
+      },
+      {
+        "year": "1999",
+        "NbSongs": 2
+      },
+      {
+        "year": "2001",
+        "NbSongs": 3
+      },
+      {
+        "year": "1995",
+        "NbSongs": 3
+      },
+      {
+        "year": "1998",
+        "NbSongs": 3
+      },
+      {
+        "year": "2000",
+        "NbSongs": 2
+      },
+      {
+        "year": "2002",
+        "NbSongs": 4
+      },
+      {
+        "year": "2010",
+        "NbSongs": 2
+      },
+      {
+        "year": "1983",
+        "NbSongs": 1
+      },
+      {
+        "year": "1984",
+        "NbSongs": 3
+      },
+      {
+        "year": "1986",
+        "NbSongs": 3
+      },
+      {
+        "year": "1987",
+        "NbSongs": 1
+      },
+      {
+        "year": "1991",
+        "NbSongs": 1
+      },
+      {
+        "year": "1996",
+        "NbSongs": 1
+      },
+      {
+        "year": "2005",
+        "NbSongs": 1
+      },
+      {
+        "year": "2006",
+        "NbSongs": 2
+      },
+      {
+        "year": "2009",
+        "NbSongs": 1
+      },
+      {
+        "year": "2012",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Voulez-Vous (Extended Remix)",
+        "rank": 5
+      },
+      {
+        "title": "Give In To Me",
+        "rank": 240
+      },
+      {
+        "title": "Amanda:If I Open Up My Heart To You",
+        "rank": 350
+      }
+    ]
+  },
+  "Heavy Metal": {
+    "NbSongsPerYears": [
+      {
+        "year": "2007",
+        "NbSongs": 27
+      },
+      {
+        "year": "2008",
+        "NbSongs": 20
+      },
+      {
+        "year": "2000",
+        "NbSongs": 16
+      },
+      {
+        "year": "2001",
+        "NbSongs": 21
+      },
+      {
+        "year": "2002",
+        "NbSongs": 20
+      },
+      {
+        "year": "2004",
+        "NbSongs": 17
+      },
+      {
+        "year": "1997",
+        "NbSongs": 27
+      },
+      {
+        "year": "2003",
+        "NbSongs": 28
+      },
+      {
+        "year": "2005",
+        "NbSongs": 39
+      },
+      {
+        "year": "2010",
+        "NbSongs": 42
+      },
+      {
+        "year": "1994",
+        "NbSongs": 17
+      },
+      {
+        "year": "1995",
+        "NbSongs": 17
+      },
+      {
+        "year": "1996",
+        "NbSongs": 22
+      },
+      {
+        "year": "1998",
+        "NbSongs": 27
+      },
+      {
+        "year": "1999",
+        "NbSongs": 25
+      },
+      {
+        "year": "2013",
+        "NbSongs": 12
+      },
+      {
+        "year": "1975",
+        "NbSongs": 4
+      },
+      {
+        "year": "1976",
+        "NbSongs": 4
+      },
+      {
+        "year": "1977",
+        "NbSongs": 2
+      },
+      {
+        "year": "1978",
+        "NbSongs": 5
+      },
+      {
+        "year": "1979",
+        "NbSongs": 3
+      },
+      {
+        "year": "1980",
+        "NbSongs": 5
+      },
+      {
+        "year": "1981",
+        "NbSongs": 5
+      },
+      {
+        "year": "1983",
+        "NbSongs": 8
+      },
+      {
+        "year": "1984",
+        "NbSongs": 5
+      },
+      {
+        "year": "1985",
+        "NbSongs": 6
+      },
+      {
+        "year": "1986",
+        "NbSongs": 7
+      },
+      {
+        "year": "1988",
+        "NbSongs": 10
+      },
+      {
+        "year": "1990",
+        "NbSongs": 11
+      },
+      {
+        "year": "1992",
+        "NbSongs": 10
+      },
+      {
+        "year": "2014",
+        "NbSongs": 9
+      },
+      {
+        "year": "1982",
+        "NbSongs": 4
+      },
+      {
+        "year": "1989",
+        "NbSongs": 9
+      },
+      {
+        "year": "1993",
+        "NbSongs": 4
+      },
+      {
+        "year": "2012",
+        "NbSongs": 15
+      },
+      {
+        "year": "2009",
+        "NbSongs": 20
+      },
+      {
+        "year": "1991",
+        "NbSongs": 6
+      },
+      {
+        "year": "2011",
+        "NbSongs": 16
+      },
+      {
+        "year": "1987",
+        "NbSongs": 6
+      },
+      {
+        "year": "2006",
+        "NbSongs": 15
+      },
+      {
+        "year": "2015",
+        "NbSongs": 5
+      },
+      {
+        "year": "2016",
+        "NbSongs": 1
+      },
+      {
+        "year": "1974",
+        "NbSongs": 3
+      },
+      {
+        "year": "1972",
+        "NbSongs": 2
+      },
+      {
+        "year": "1973",
+        "NbSongs": 2
+      },
+      {
+        "year": "1971",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Good To Feel Hungry",
+        "rank": 1
+      },
+      {
+        "title": "Hard Times",
+        "rank": 13
+      },
+      {
+        "title": "Follow The Leader",
+        "rank": 13
+      }
+    ]
+  },
+  "Death Metal": {
+    "NbSongsPerYears": [
+      {
+        "year": "2007",
+        "NbSongs": 12
+      },
+      {
+        "year": "2012",
+        "NbSongs": 4
+      },
+      {
+        "year": "1997",
+        "NbSongs": 27
+      },
+      {
+        "year": "2002",
+        "NbSongs": 18
+      },
+      {
+        "year": "1990",
+        "NbSongs": 9
+      },
+      {
+        "year": "1991",
+        "NbSongs": 5
+      },
+      {
+        "year": "1999",
+        "NbSongs": 17
+      },
+      {
+        "year": "1994",
+        "NbSongs": 6
+      },
+      {
+        "year": "1995",
+        "NbSongs": 11
+      },
+      {
+        "year": "2000",
+        "NbSongs": 8
+      },
+      {
+        "year": "2004",
+        "NbSongs": 9
+      },
+      {
+        "year": "2005",
+        "NbSongs": 12
+      },
+      {
+        "year": "1993",
+        "NbSongs": 5
+      },
+      {
+        "year": "2008",
+        "NbSongs": 9
+      },
+      {
+        "year": "2010",
+        "NbSongs": 15
+      },
+      {
+        "year": "2001",
+        "NbSongs": 10
+      },
+      {
+        "year": "1996",
+        "NbSongs": 8
+      },
+      {
+        "year": "2003",
+        "NbSongs": 9
+      },
+      {
+        "year": "2006",
+        "NbSongs": 10
+      },
+      {
+        "year": "2014",
+        "NbSongs": 6
+      },
+      {
+        "year": "2009",
+        "NbSongs": 7
+      },
+      {
+        "year": "1992",
+        "NbSongs": 6
+      },
+      {
+        "year": "1998",
+        "NbSongs": 8
+      },
+      {
+        "year": "2011",
+        "NbSongs": 4
+      },
+      {
+        "year": "2013",
+        "NbSongs": 3
+      },
+      {
+        "year": "2015",
+        "NbSongs": 2
+      },
+      {
+        "year": "2016",
+        "NbSongs": 1
+      },
+      {
+        "year": "1989",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Ode To Johnny",
+        "rank": 2046
+      },
+      {
+        "title": "Grave Ideals (Nekromaniak)",
+        "rank": 2389
+      },
+      {
+        "title": "Stargazing (Stargazer II)",
+        "rank": 2389
+      }
+    ]
+  },
+  "Thrash Metal": {
+    "NbSongsPerYears": [
+      {
+        "year": "1997",
+        "NbSongs": 27
+      },
+      {
+        "year": "2002",
+        "NbSongs": 18
+      },
+      {
+        "year": "1990",
+        "NbSongs": 9
+      },
+      {
+        "year": "1991",
+        "NbSongs": 5
+      },
+      {
+        "year": "1999",
+        "NbSongs": 17
+      },
+      {
+        "year": "2005",
+        "NbSongs": 8
+      },
+      {
+        "year": "2007",
+        "NbSongs": 11
+      },
+      {
+        "year": "1992",
+        "NbSongs": 5
+      },
+      {
+        "year": "1993",
+        "NbSongs": 4
+      },
+      {
+        "year": "1994",
+        "NbSongs": 8
+      },
+      {
+        "year": "1996",
+        "NbSongs": 3
+      },
+      {
+        "year": "1998",
+        "NbSongs": 7
+      },
+      {
+        "year": "2000",
+        "NbSongs": 4
+      },
+      {
+        "year": "2004",
+        "NbSongs": 6
+      },
+      {
+        "year": "2008",
+        "NbSongs": 4
+      },
+      {
+        "year": "1995",
+        "NbSongs": 4
+      },
+      {
+        "year": "2006",
+        "NbSongs": 11
+      },
+      {
+        "year": "2009",
+        "NbSongs": 1
+      },
+      {
+        "year": "2012",
+        "NbSongs": 2
+      },
+      {
+        "year": "2001",
+        "NbSongs": 3
+      },
+      {
+        "year": "2010",
+        "NbSongs": 5
+      },
+      {
+        "year": "1985",
+        "NbSongs": 2
+      },
+      {
+        "year": "1989",
+        "NbSongs": 1
+      },
+      {
+        "year": "2013",
+        "NbSongs": 2
+      },
+      {
+        "year": "2015",
+        "NbSongs": 5
+      },
+      {
+        "year": "2003",
+        "NbSongs": 3
+      },
+      {
+        "year": "2011",
+        "NbSongs": 3
+      },
+      {
+        "year": "1984",
+        "NbSongs": 2
+      },
+      {
+        "year": "1986",
+        "NbSongs": 1
+      },
+      {
+        "year": "1987",
+        "NbSongs": 2
+      },
+      {
+        "year": "1988",
+        "NbSongs": 2
+      },
+      {
+        "year": "2016",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "P & V",
+        "rank": 4
+      },
+      {
+        "title": "Deathrider",
+        "rank": 9
+      },
+      {
+        "title": "Stench Of Paradise",
+        "rank": 381
+      }
+    ]
+  },
+  "Black Metal": {
+    "NbSongsPerYears": [
+      {
+        "year": "1994",
+        "NbSongs": 17
+      },
+      {
+        "year": "1995",
+        "NbSongs": 17
+      },
+      {
+        "year": "1996",
+        "NbSongs": 22
+      },
+      {
+        "year": "1997",
+        "NbSongs": 7
+      },
+      {
+        "year": "1998",
+        "NbSongs": 27
+      },
+      {
+        "year": "1999",
+        "NbSongs": 25
+      },
+      {
+        "year": "2000",
+        "NbSongs": 7
+      },
+      {
+        "year": "2001",
+        "NbSongs": 13
+      },
+      {
+        "year": "2007",
+        "NbSongs": 4
+      },
+      {
+        "year": "2003",
+        "NbSongs": 9
+      },
+      {
+        "year": "2006",
+        "NbSongs": 13
+      },
+      {
+        "year": "2009",
+        "NbSongs": 7
+      },
+      {
+        "year": "2008",
+        "NbSongs": 5
+      },
+      {
+        "year": "2010",
+        "NbSongs": 3
+      },
+      {
+        "year": "2012",
+        "NbSongs": 2
+      },
+      {
+        "year": "2004",
+        "NbSongs": 13
+      },
+      {
+        "year": "2005",
+        "NbSongs": 12
+      },
+      {
+        "year": "2002",
+        "NbSongs": 9
+      },
+      {
+        "year": "2014",
+        "NbSongs": 3
+      },
+      {
+        "year": "1992",
+        "NbSongs": 2
+      },
+      {
+        "year": "2015",
+        "NbSongs": 2
+      },
+      {
+        "year": "2011",
+        "NbSongs": 1
+      },
+      {
+        "year": "2013",
+        "NbSongs": 1
+      },
+      {
+        "year": "1984",
+        "NbSongs": 1
+      },
+      {
+        "year": "1985",
+        "NbSongs": 1
+      },
+      {
+        "year": "1987",
+        "NbSongs": 1
+      },
+      {
+        "year": "1988",
+        "NbSongs": 1
+      },
+      {
+        "year": "1990",
+        "NbSongs": 1
+      },
+      {
+        "year": "1991",
+        "NbSongs": 1
+      },
+      {
+        "year": "1993",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Bruderseele",
+        "rank": 2922
+      },
+      {
+        "title": "The Wind And The Broken Girl",
+        "rank": 2922
+      },
+      {
+        "title": "Can't Save Anyone",
+        "rank": 2922
+      }
+    ]
+  },
+  "Electronic": {
+    "NbSongsPerYears": [
+      {
+        "year": "2005",
+        "NbSongs": 14
+      },
+      {
+        "year": "2009",
+        "NbSongs": 17
+      },
+      {
+        "year": "2007",
+        "NbSongs": 24
+      },
+      {
+        "year": "2010",
+        "NbSongs": 33
+      },
+      {
+        "year": "2000",
+        "NbSongs": 4
+      },
+      {
+        "year": "2008",
+        "NbSongs": 21
+      },
+      {
+        "year": "1997",
+        "NbSongs": 5
+      },
+      {
+        "year": "2001",
+        "NbSongs": 15
+      },
+      {
+        "year": "2002",
+        "NbSongs": 16
+      },
+      {
+        "year": "2003",
+        "NbSongs": 10
+      },
+      {
+        "year": "2011",
+        "NbSongs": 19
+      },
+      {
+        "year": "1994",
+        "NbSongs": 14
+      },
+      {
+        "year": "1995",
+        "NbSongs": 13
+      },
+      {
+        "year": "1998",
+        "NbSongs": 9
+      },
+      {
+        "year": "2006",
+        "NbSongs": 13
+      },
+      {
+        "year": "1976",
+        "NbSongs": 15
+      },
+      {
+        "year": "1977",
+        "NbSongs": 9
+      },
+      {
+        "year": "1978",
+        "NbSongs": 22
+      },
+      {
+        "year": "1980",
+        "NbSongs": 13
+      },
+      {
+        "year": "1981",
+        "NbSongs": 16
+      },
+      {
+        "year": "1983",
+        "NbSongs": 18
+      },
+      {
+        "year": "1985",
+        "NbSongs": 14
+      },
+      {
+        "year": "1991",
+        "NbSongs": 7
+      },
+      {
+        "year": "1993",
+        "NbSongs": 18
+      },
+      {
+        "year": "2014",
+        "NbSongs": 12
+      },
+      {
+        "year": "1996",
+        "NbSongs": 9
+      },
+      {
+        "year": "1999",
+        "NbSongs": 8
+      },
+      {
+        "year": "2004",
+        "NbSongs": 16
+      },
+      {
+        "year": "2013",
+        "NbSongs": 12
+      },
+      {
+        "year": "2012",
+        "NbSongs": 12
+      },
+      {
+        "year": "2015",
+        "NbSongs": 7
+      },
+      {
+        "year": "1992",
+        "NbSongs": 7
+      },
+      {
+        "year": "1971",
+        "NbSongs": 1
+      },
+      {
+        "year": "1972",
+        "NbSongs": 2
+      },
+      {
+        "year": "1973",
+        "NbSongs": 3
+      },
+      {
+        "year": "1975",
+        "NbSongs": 5
+      },
+      {
+        "year": "1984",
+        "NbSongs": 1
+      },
+      {
+        "year": "1986",
+        "NbSongs": 2
+      },
+      {
+        "year": "1988",
+        "NbSongs": 3
+      },
+      {
+        "year": "1989",
+        "NbSongs": 1
+      },
+      {
+        "year": "1990",
+        "NbSongs": 3
+      },
+      {
+        "year": "1974",
+        "NbSongs": 1
+      },
+      {
+        "year": "1982",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "The Juice Of Rotted Fruit",
+        "rank": 1
+      },
+      {
+        "title": "Anything",
+        "rank": 1
+      },
+      {
+        "title": "Carthage Six",
+        "rank": 4
+      }
+    ]
+  },
+  "Electro": {
+    "NbSongsPerYears": [
+      {
+        "year": "2007",
+        "NbSongs": 24
+      },
+      {
+        "year": "2010",
+        "NbSongs": 33
+      },
+      {
+        "year": "2001",
+        "NbSongs": 19
+      },
+      {
+        "year": "2003",
+        "NbSongs": 28
+      },
+      {
+        "year": "2005",
+        "NbSongs": 39
+      },
+      {
+        "year": "1986",
+        "NbSongs": 2
+      },
+      {
+        "year": "1997",
+        "NbSongs": 5
+      },
+      {
+        "year": "2002",
+        "NbSongs": 16
+      },
+      {
+        "year": "2008",
+        "NbSongs": 8
+      },
+      {
+        "year": "2011",
+        "NbSongs": 19
+      },
+      {
+        "year": "2012",
+        "NbSongs": 5
+      },
+      {
+        "year": "2014",
+        "NbSongs": 2
+      },
+      {
+        "year": "2015",
+        "NbSongs": 2
+      },
+      {
+        "year": "2013",
+        "NbSongs": 2
+      },
+      {
+        "year": "1999",
+        "NbSongs": 2
+      },
+      {
+        "year": "2004",
+        "NbSongs": 3
+      },
+      {
+        "year": "2009",
+        "NbSongs": 1
+      },
+      {
+        "year": "1984",
+        "NbSongs": 1
+      },
+      {
+        "year": "1985",
+        "NbSongs": 1
+      },
+      {
+        "year": "1988",
+        "NbSongs": 3
+      },
+      {
+        "year": "1991",
+        "NbSongs": 1
+      },
+      {
+        "year": "1993",
+        "NbSongs": 1
+      },
+      {
+        "year": "1996",
+        "NbSongs": 1
+      },
+      {
+        "year": "2006",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Cover My World",
+        "rank": 58483
+      },
+      {
+        "title": "Crave",
+        "rank": 62476
+      },
+      {
+        "title": "Little Ghost",
+        "rank": 64223
+      }
+    ]
+  },
+  "Trance": {
+    "NbSongsPerYears": [
+      {
+        "year": "1999",
+        "NbSongs": 3
+      },
+      {
+        "year": "2002",
+        "NbSongs": 2
+      },
+      {
+        "year": "2004",
+        "NbSongs": 2
+      },
+      {
+        "year": "2005",
+        "NbSongs": 1
+      },
+      {
+        "year": "2007",
+        "NbSongs": 2
+      },
+      {
+        "year": "1976",
+        "NbSongs": 15
+      },
+      {
+        "year": "1977",
+        "NbSongs": 9
+      },
+      {
+        "year": "1978",
+        "NbSongs": 22
+      },
+      {
+        "year": "1980",
+        "NbSongs": 13
+      },
+      {
+        "year": "1981",
+        "NbSongs": 16
+      },
+      {
+        "year": "1983",
+        "NbSongs": 18
+      },
+      {
+        "year": "1985",
+        "NbSongs": 14
+      },
+      {
+        "year": "1991",
+        "NbSongs": 7
+      },
+      {
+        "year": "1993",
+        "NbSongs": 18
+      },
+      {
+        "year": "1994",
+        "NbSongs": 21
+      },
+      {
+        "year": "2006",
+        "NbSongs": 3
+      },
+      {
+        "year": "2014",
+        "NbSongs": 12
+      },
+      {
+        "year": "2008",
+        "NbSongs": 1
+      },
+      {
+        "year": "2009",
+        "NbSongs": 1
+      },
+      {
+        "year": "2013",
+        "NbSongs": 2
+      },
+      {
+        "year": "1995",
+        "NbSongs": 1
+      },
+      {
+        "year": "1997",
+        "NbSongs": 1
+      },
+      {
+        "year": "2003",
+        "NbSongs": 1
+      },
+      {
+        "year": "2010",
+        "NbSongs": 1
+      },
+      {
+        "year": "2012",
+        "NbSongs": 2
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Communicate",
+        "rank": 3
+      },
+      {
+        "title": "Never Gonna Come Back Down (Hybrid's Breaktek Mix)",
+        "rank": 8
+      },
+      {
+        "title": "Dark Heart Dawning",
+        "rank": 10
+      }
+    ]
+  },
+  "Techno": {
+    "NbSongsPerYears": [
+      {
+        "year": "1996",
+        "NbSongs": 1
+      },
+      {
+        "year": "1999",
+        "NbSongs": 1
+      },
+      {
+        "year": "1983",
+        "NbSongs": 1
+      },
+      {
+        "year": "2008",
+        "NbSongs": 1
+      },
+      {
+        "year": "2014",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Familiar",
+        "rank": 1744
+      },
+      {
+        "title": "The Reflex",
+        "rank": 53699
+      },
+      {
+        "title": "I'm So Scared",
+        "rank": 64223
+      }
+    ]
+  },
+  "Indie Pop": {
+    "NbSongsPerYears": [
+      {
+        "year": "2001",
+        "NbSongs": 6
+      },
+      {
+        "year": "2009",
+        "NbSongs": 15
+      },
+      {
+        "year": "2004",
+        "NbSongs": 32
+      },
+      {
+        "year": "2006",
+        "NbSongs": 7
+      },
+      {
+        "year": "2012",
+        "NbSongs": 9
+      },
+      {
+        "year": "2002",
+        "NbSongs": 8
+      },
+      {
+        "year": "1992",
+        "NbSongs": 2
+      },
+      {
+        "year": "1997",
+        "NbSongs": 6
+      },
+      {
+        "year": "2005",
+        "NbSongs": 15
+      },
+      {
+        "year": "2011",
+        "NbSongs": 7
+      },
+      {
+        "year": "1994",
+        "NbSongs": 2
+      },
+      {
+        "year": "2007",
+        "NbSongs": 11
+      },
+      {
+        "year": "2000",
+        "NbSongs": 4
+      },
+      {
+        "year": "2014",
+        "NbSongs": 6
+      },
+      {
+        "year": "2015",
+        "NbSongs": 12
+      },
+      {
+        "year": "2010",
+        "NbSongs": 9
+      },
+      {
+        "year": "2013",
+        "NbSongs": 12
+      },
+      {
+        "year": "1996",
+        "NbSongs": 3
+      },
+      {
+        "year": "1998",
+        "NbSongs": 5
+      },
+      {
+        "year": "1999",
+        "NbSongs": 2
+      },
+      {
+        "year": "2008",
+        "NbSongs": 8
+      },
+      {
+        "year": "2003",
+        "NbSongs": 4
+      },
+      {
+        "year": "2016",
+        "NbSongs": 3
+      },
+      {
+        "year": "1995",
+        "NbSongs": 2
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Miss Halfway",
+        "rank": 1
+      },
+      {
+        "title": "Miss Halfway",
+        "rank": 1
+      },
+      {
+        "title": "Iron Feather",
+        "rank": 17
+      }
+    ]
+  },
+  "Indie Rock": {
+    "NbSongsPerYears": [
+      {
+        "year": "2006",
+        "NbSongs": 42
+      },
+      {
+        "year": "2007",
+        "NbSongs": 47
+      },
+      {
+        "year": "2008",
+        "NbSongs": 35
+      },
+      {
+        "year": "2009",
+        "NbSongs": 44
+      },
+      {
+        "year": "2012",
+        "NbSongs": 33
+      },
+      {
+        "year": "2013",
+        "NbSongs": 24
+      },
+      {
+        "year": "2004",
+        "NbSongs": 32
+      },
+      {
+        "year": "2001",
+        "NbSongs": 13
+      },
+      {
+        "year": "2005",
+        "NbSongs": 27
+      },
+      {
+        "year": "2010",
+        "NbSongs": 22
+      },
+      {
+        "year": "2011",
+        "NbSongs": 21
+      },
+      {
+        "year": "1993",
+        "NbSongs": 6
+      },
+      {
+        "year": "1994",
+        "NbSongs": 15
+      },
+      {
+        "year": "2002",
+        "NbSongs": 17
+      },
+      {
+        "year": "2003",
+        "NbSongs": 17
+      },
+      {
+        "year": "1985",
+        "NbSongs": 1
+      },
+      {
+        "year": "1987",
+        "NbSongs": 1
+      },
+      {
+        "year": "1988",
+        "NbSongs": 2
+      },
+      {
+        "year": "1989",
+        "NbSongs": 2
+      },
+      {
+        "year": "1991",
+        "NbSongs": 5
+      },
+      {
+        "year": "1995",
+        "NbSongs": 6
+      },
+      {
+        "year": "1999",
+        "NbSongs": 10
+      },
+      {
+        "year": "2000",
+        "NbSongs": 12
+      },
+      {
+        "year": "2014",
+        "NbSongs": 6
+      },
+      {
+        "year": "2016",
+        "NbSongs": 3
+      },
+      {
+        "year": "2015",
+        "NbSongs": 8
+      },
+      {
+        "year": "1992",
+        "NbSongs": 7
+      },
+      {
+        "year": "1996",
+        "NbSongs": 8
+      },
+      {
+        "year": "1990",
+        "NbSongs": 1
+      },
+      {
+        "year": "1998",
+        "NbSongs": 7
+      },
+      {
+        "year": "1997",
+        "NbSongs": 5
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "The Giving Tree",
+        "rank": 2
+      },
+      {
+        "title": "Knights Of Shame",
+        "rank": 3
+      },
+      {
+        "title": "The Waltz",
+        "rank": 4
+      }
+    ]
+  },
+  "Indie Folk": {
+    "NbSongsPerYears": [
+      {
+        "year": "2011",
+        "NbSongs": 13
+      },
+      {
+        "year": "2014",
+        "NbSongs": 6
+      },
+      {
+        "year": "2015",
+        "NbSongs": 12
+      },
+      {
+        "year": "2003",
+        "NbSongs": 1
+      },
+      {
+        "year": "2004",
+        "NbSongs": 2
+      },
+      {
+        "year": "2006",
+        "NbSongs": 5
+      },
+      {
+        "year": "2009",
+        "NbSongs": 4
+      },
+      {
+        "year": "2013",
+        "NbSongs": 4
+      },
+      {
+        "year": "2002",
+        "NbSongs": 1
+      },
+      {
+        "year": "2016",
+        "NbSongs": 2
+      },
+      {
+        "year": "2007",
+        "NbSongs": 6
+      },
+      {
+        "year": "2010",
+        "NbSongs": 1
+      },
+      {
+        "year": "1993",
+        "NbSongs": 1
+      },
+      {
+        "year": "1994",
+        "NbSongs": 1
+      },
+      {
+        "year": "2001",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "99 Cops",
+        "rank": 62476
+      },
+      {
+        "title": "My Eye",
+        "rank": 62476
+      },
+      {
+        "title": "Banjolele",
+        "rank": 64964
+      }
+    ]
+  },
+  "Dancehall": {
+    "NbSongsPerYears": [
+      {
+        "year": "2005",
+        "NbSongs": 14
+      },
+      {
+        "year": "2007",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Lyrics",
+        "rank": 145
+      },
+      {
+        "title": "Document",
+        "rank": 64421
+      },
+      {
+        "title": "Interview",
+        "rank": 71210
+      }
+    ]
+  },
+  "Eurodance": {
+    "NbSongsPerYears": [
+      {
+        "year": "1994",
+        "NbSongs": 3
+      },
+      {
+        "year": "1997",
+        "NbSongs": 2
+      },
+      {
+        "year": "1998",
+        "NbSongs": 7
+      },
+      {
+        "year": "1992",
+        "NbSongs": 3
+      },
+      {
+        "year": "1993",
+        "NbSongs": 9
+      },
+      {
+        "year": "1995",
+        "NbSongs": 3
+      },
+      {
+        "year": "1999",
+        "NbSongs": 4
+      },
+      {
+        "year": "2000",
+        "NbSongs": 2
+      },
+      {
+        "year": "2002",
+        "NbSongs": 4
+      },
+      {
+        "year": "2010",
+        "NbSongs": 2
+      },
+      {
+        "year": "1996",
+        "NbSongs": 2
+      },
+      {
+        "year": "2004",
+        "NbSongs": 3
+      },
+      {
+        "year": "1991",
+        "NbSongs": 2
+      },
+      {
+        "year": "2006",
+        "NbSongs": 1
+      },
+      {
+        "year": "2008",
+        "NbSongs": 1
+      },
+      {
+        "year": "2009",
+        "NbSongs": 1
+      },
+      {
+        "year": "2013",
+        "NbSongs": 1
+      },
+      {
+        "year": "2007",
+        "NbSongs": 2
+      },
+      {
+        "year": "1983",
+        "NbSongs": 1
+      },
+      {
+        "year": "1985",
+        "NbSongs": 1
+      },
+      {
+        "year": "1987",
+        "NbSongs": 1
+      },
+      {
+        "year": "1988",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Festfolk",
+        "rank": 55
+      },
+      {
+        "title": "Festfolk (2006 Remix)",
+        "rank": 55
+      },
+      {
+        "title": "Sverige",
+        "rank": 129
+      }
+    ]
+  },
+  "Dance": {
+    "NbSongsPerYears": [
+      {
+        "year": "2000",
+        "NbSongs": 4
+      },
+      {
+        "year": "2007",
+        "NbSongs": 3
+      },
+      {
+        "year": "2008",
+        "NbSongs": 12
+      },
+      {
+        "year": "2010",
+        "NbSongs": 19
+      },
+      {
+        "year": "1987",
+        "NbSongs": 3
+      },
+      {
+        "year": "1991",
+        "NbSongs": 4
+      },
+      {
+        "year": "1992",
+        "NbSongs": 5
+      },
+      {
+        "year": "1995",
+        "NbSongs": 2
+      },
+      {
+        "year": "1998",
+        "NbSongs": 8
+      },
+      {
+        "year": "1999",
+        "NbSongs": 5
+      },
+      {
+        "year": "2002",
+        "NbSongs": 10
+      },
+      {
+        "year": "2004",
+        "NbSongs": 6
+      },
+      {
+        "year": "2005",
+        "NbSongs": 7
+      },
+      {
+        "year": "2012",
+        "NbSongs": 17
+      },
+      {
+        "year": "1993",
+        "NbSongs": 9
+      },
+      {
+        "year": "2014",
+        "NbSongs": 19
+      },
+      {
+        "year": "2011",
+        "NbSongs": 13
+      },
+      {
+        "year": "2009",
+        "NbSongs": 10
+      },
+      {
+        "year": "2006",
+        "NbSongs": 9
+      },
+      {
+        "year": "1981",
+        "NbSongs": 2
+      },
+      {
+        "year": "1982",
+        "NbSongs": 2
+      },
+      {
+        "year": "1983",
+        "NbSongs": 6
+      },
+      {
+        "year": "2013",
+        "NbSongs": 10
+      },
+      {
+        "year": "1997",
+        "NbSongs": 3
+      },
+      {
+        "year": "1978",
+        "NbSongs": 1
+      },
+      {
+        "year": "1979",
+        "NbSongs": 1
+      },
+      {
+        "year": "1984",
+        "NbSongs": 3
+      },
+      {
+        "year": "1985",
+        "NbSongs": 2
+      },
+      {
+        "year": "1988",
+        "NbSongs": 1
+      },
+      {
+        "year": "1996",
+        "NbSongs": 3
+      },
+      {
+        "year": "2015",
+        "NbSongs": 2
+      },
+      {
+        "year": "2001",
+        "NbSongs": 6
+      },
+      {
+        "year": "2003",
+        "NbSongs": 3
+      },
+      {
+        "year": "1994",
+        "NbSongs": 3
+      },
+      {
+        "year": "1986",
+        "NbSongs": 3
+      },
+      {
+        "year": "1990",
+        "NbSongs": 1
+      },
+      {
+        "year": "2016",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Erotica",
+        "rank": 5
+      },
+      {
+        "title": "What Is Truth?",
+        "rank": 7
+      },
+      {
+        "title": "It's Insane Out Here",
+        "rank": 7
+      }
+    ]
+  },
+  "Dubstep": {
+    "NbSongsPerYears": [
+      {
+        "year": "2010",
+        "NbSongs": 8
+      },
+      {
+        "year": "2011",
+        "NbSongs": 5
+      },
+      {
+        "year": "2008",
+        "NbSongs": 3
+      },
+      {
+        "year": "2012",
+        "NbSongs": 2
+      },
+      {
+        "year": "2007",
+        "NbSongs": 1
+      },
+      {
+        "year": "2009",
+        "NbSongs": 2
+      },
+      {
+        "year": "2013",
+        "NbSongs": 1
+      },
+      {
+        "year": "2015",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "If Only",
+        "rank": 196142
+      },
+      {
+        "title": "Tittsworth & Alvin Risk:Pendejas",
+        "rank": 207044
+      },
+      {
+        "title": "Where Does Your Mind Go?",
+        "rank": 225711
+      }
+    ]
+  },
+  "R&B": {
+    "NbSongsPerYears": [
+      {
+        "year": "1986",
+        "NbSongs": 20
+      },
+      {
+        "year": "1989",
+        "NbSongs": 22
+      },
+      {
+        "year": "1990",
+        "NbSongs": 6
+      },
+      {
+        "year": "1991",
+        "NbSongs": 23
+      },
+      {
+        "year": "1993",
+        "NbSongs": 17
+      },
+      {
+        "year": "1995",
+        "NbSongs": 16
+      },
+      {
+        "year": "1997",
+        "NbSongs": 13
+      },
+      {
+        "year": "2000",
+        "NbSongs": 18
+      },
+      {
+        "year": "2001",
+        "NbSongs": 16
+      },
+      {
+        "year": "2003",
+        "NbSongs": 28
+      },
+      {
+        "year": "2005",
+        "NbSongs": 26
+      },
+      {
+        "year": "2006",
+        "NbSongs": 29
+      },
+      {
+        "year": "2010",
+        "NbSongs": 21
+      },
+      {
+        "year": "2013",
+        "NbSongs": 18
+      },
+      {
+        "year": "1978",
+        "NbSongs": 11
+      },
+      {
+        "year": "1979",
+        "NbSongs": 10
+      },
+      {
+        "year": "1980",
+        "NbSongs": 7
+      },
+      {
+        "year": "1982",
+        "NbSongs": 9
+      },
+      {
+        "year": "2014",
+        "NbSongs": 6
+      },
+      {
+        "year": "2008",
+        "NbSongs": 84
+      },
+      {
+        "year": "2012",
+        "NbSongs": 26
+      },
+      {
+        "year": "1967",
+        "NbSongs": 13
+      },
+      {
+        "year": "1969",
+        "NbSongs": 12
+      },
+      {
+        "year": "1971",
+        "NbSongs": 14
+      },
+      {
+        "year": "1972",
+        "NbSongs": 20
+      },
+      {
+        "year": "1973",
+        "NbSongs": 20
+      },
+      {
+        "year": "1974",
+        "NbSongs": 20
+      },
+      {
+        "year": "1975",
+        "NbSongs": 21
+      },
+      {
+        "year": "1976",
+        "NbSongs": 18
+      },
+      {
+        "year": "1977",
+        "NbSongs": 18
+      },
+      {
+        "year": "1981",
+        "NbSongs": 23
+      },
+      {
+        "year": "1983",
+        "NbSongs": 17
+      },
+      {
+        "year": "1984",
+        "NbSongs": 17
+      },
+      {
+        "year": "1985",
+        "NbSongs": 15
+      },
+      {
+        "year": "1987",
+        "NbSongs": 9
+      },
+      {
+        "year": "1992",
+        "NbSongs": 13
+      },
+      {
+        "year": "1998",
+        "NbSongs": 23
+      },
+      {
+        "year": "2004",
+        "NbSongs": 19
+      },
+      {
+        "year": "1988",
+        "NbSongs": 22
+      },
+      {
+        "year": "1994",
+        "NbSongs": 19
+      },
+      {
+        "year": "1996",
+        "NbSongs": 13
+      },
+      {
+        "year": "2002",
+        "NbSongs": 20
+      },
+      {
+        "year": "2007",
+        "NbSongs": 28
+      },
+      {
+        "year": "2009",
+        "NbSongs": 23
+      },
+      {
+        "year": "1962",
+        "NbSongs": 7
+      },
+      {
+        "year": "1968",
+        "NbSongs": 8
+      },
+      {
+        "year": "1970",
+        "NbSongs": 12
+      },
+      {
+        "year": "1999",
+        "NbSongs": 9
+      },
+      {
+        "year": "2011",
+        "NbSongs": 11
+      },
+      {
+        "year": "1952",
+        "NbSongs": 1
+      },
+      {
+        "year": "1963",
+        "NbSongs": 3
+      },
+      {
+        "year": "2015",
+        "NbSongs": 5
+      },
+      {
+        "year": "1961",
+        "NbSongs": 3
+      },
+      {
+        "year": "1964",
+        "NbSongs": 7
+      },
+      {
+        "year": "1956",
+        "NbSongs": 1
+      },
+      {
+        "year": "1958",
+        "NbSongs": 2
+      },
+      {
+        "year": "1960",
+        "NbSongs": 4
+      },
+      {
+        "year": "1965",
+        "NbSongs": 6
+      },
+      {
+        "year": "1966",
+        "NbSongs": 3
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Performance",
+        "rank": 1
+      },
+      {
+        "title": "Neighborhood Affair",
+        "rank": 2
+      },
+      {
+        "title": "It Takes a Young Girl",
+        "rank": 3
+      }
+    ]
+  },
+  "Soul": {
+    "NbSongsPerYears": [
+      {
+        "year": "1986",
+        "NbSongs": 20
+      },
+      {
+        "year": "1989",
+        "NbSongs": 22
+      },
+      {
+        "year": "1990",
+        "NbSongs": 6
+      },
+      {
+        "year": "1991",
+        "NbSongs": 23
+      },
+      {
+        "year": "1993",
+        "NbSongs": 17
+      },
+      {
+        "year": "1995",
+        "NbSongs": 16
+      },
+      {
+        "year": "1997",
+        "NbSongs": 13
+      },
+      {
+        "year": "2000",
+        "NbSongs": 18
+      },
+      {
+        "year": "2001",
+        "NbSongs": 16
+      },
+      {
+        "year": "2003",
+        "NbSongs": 28
+      },
+      {
+        "year": "2005",
+        "NbSongs": 26
+      },
+      {
+        "year": "2006",
+        "NbSongs": 29
+      },
+      {
+        "year": "2010",
+        "NbSongs": 21
+      },
+      {
+        "year": "2013",
+        "NbSongs": 18
+      },
+      {
+        "year": "2008",
+        "NbSongs": 84
+      },
+      {
+        "year": "2012",
+        "NbSongs": 26
+      },
+      {
+        "year": "1967",
+        "NbSongs": 13
+      },
+      {
+        "year": "1969",
+        "NbSongs": 12
+      },
+      {
+        "year": "1971",
+        "NbSongs": 14
+      },
+      {
+        "year": "1972",
+        "NbSongs": 20
+      },
+      {
+        "year": "1973",
+        "NbSongs": 20
+      },
+      {
+        "year": "1974",
+        "NbSongs": 20
+      },
+      {
+        "year": "1975",
+        "NbSongs": 21
+      },
+      {
+        "year": "1976",
+        "NbSongs": 18
+      },
+      {
+        "year": "1977",
+        "NbSongs": 18
+      },
+      {
+        "year": "1978",
+        "NbSongs": 7
+      },
+      {
+        "year": "1980",
+        "NbSongs": 6
+      },
+      {
+        "year": "1981",
+        "NbSongs": 23
+      },
+      {
+        "year": "1982",
+        "NbSongs": 7
+      },
+      {
+        "year": "1983",
+        "NbSongs": 17
+      },
+      {
+        "year": "1984",
+        "NbSongs": 17
+      },
+      {
+        "year": "1985",
+        "NbSongs": 15
+      },
+      {
+        "year": "1987",
+        "NbSongs": 9
+      },
+      {
+        "year": "1992",
+        "NbSongs": 13
+      },
+      {
+        "year": "1998",
+        "NbSongs": 23
+      },
+      {
+        "year": "2004",
+        "NbSongs": 19
+      },
+      {
+        "year": "2015",
+        "NbSongs": 5
+      },
+      {
+        "year": "2009",
+        "NbSongs": 11
+      },
+      {
+        "year": "2011",
+        "NbSongs": 10
+      },
+      {
+        "year": "1988",
+        "NbSongs": 22
+      },
+      {
+        "year": "1994",
+        "NbSongs": 19
+      },
+      {
+        "year": "1996",
+        "NbSongs": 13
+      },
+      {
+        "year": "2002",
+        "NbSongs": 20
+      },
+      {
+        "year": "2007",
+        "NbSongs": 28
+      },
+      {
+        "year": "1999",
+        "NbSongs": 6
+      },
+      {
+        "year": "1961",
+        "NbSongs": 3
+      },
+      {
+        "year": "1962",
+        "NbSongs": 2
+      },
+      {
+        "year": "1964",
+        "NbSongs": 7
+      },
+      {
+        "year": "1968",
+        "NbSongs": 10
+      },
+      {
+        "year": "1970",
+        "NbSongs": 11
+      },
+      {
+        "year": "1979",
+        "NbSongs": 7
+      },
+      {
+        "year": "1963",
+        "NbSongs": 1
+      },
+      {
+        "year": "1965",
+        "NbSongs": 2
+      },
+      {
+        "year": "2014",
+        "NbSongs": 2
+      },
+      {
+        "year": "1966",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Performance",
+        "rank": 1
+      },
+      {
+        "title": "Truth N' Time",
+        "rank": 45
+      },
+      {
+        "title": "Slaughter",
+        "rank": 70
+      }
+    ]
+  },
+  "Gospel": {
+    "NbSongsPerYears": [
+      {
+        "year": "1986",
+        "NbSongs": 6
+      },
+      {
+        "year": "1989",
+        "NbSongs": 9
+      },
+      {
+        "year": "1990",
+        "NbSongs": 8
+      },
+      {
+        "year": "1991",
+        "NbSongs": 5
+      },
+      {
+        "year": "1993",
+        "NbSongs": 7
+      },
+      {
+        "year": "1995",
+        "NbSongs": 9
+      },
+      {
+        "year": "1997",
+        "NbSongs": 6
+      },
+      {
+        "year": "2000",
+        "NbSongs": 3
+      },
+      {
+        "year": "2001",
+        "NbSongs": 8
+      },
+      {
+        "year": "2003",
+        "NbSongs": 9
+      },
+      {
+        "year": "2005",
+        "NbSongs": 8
+      },
+      {
+        "year": "2006",
+        "NbSongs": 6
+      },
+      {
+        "year": "2010",
+        "NbSongs": 5
+      },
+      {
+        "year": "2013",
+        "NbSongs": 4
+      },
+      {
+        "year": "1984",
+        "NbSongs": 6
+      },
+      {
+        "year": "1985",
+        "NbSongs": 6
+      },
+      {
+        "year": "1987",
+        "NbSongs": 6
+      },
+      {
+        "year": "1988",
+        "NbSongs": 2
+      },
+      {
+        "year": "1992",
+        "NbSongs": 5
+      },
+      {
+        "year": "1994",
+        "NbSongs": 9
+      },
+      {
+        "year": "1999",
+        "NbSongs": 10
+      },
+      {
+        "year": "2004",
+        "NbSongs": 7
+      },
+      {
+        "year": "1967",
+        "NbSongs": 6
+      },
+      {
+        "year": "1969",
+        "NbSongs": 3
+      },
+      {
+        "year": "1971",
+        "NbSongs": 3
+      },
+      {
+        "year": "1972",
+        "NbSongs": 8
+      },
+      {
+        "year": "1973",
+        "NbSongs": 6
+      },
+      {
+        "year": "1974",
+        "NbSongs": 6
+      },
+      {
+        "year": "1975",
+        "NbSongs": 5
+      },
+      {
+        "year": "1976",
+        "NbSongs": 4
+      },
+      {
+        "year": "1977",
+        "NbSongs": 3
+      },
+      {
+        "year": "1978",
+        "NbSongs": 2
+      },
+      {
+        "year": "1980",
+        "NbSongs": 3
+      },
+      {
+        "year": "1981",
+        "NbSongs": 4
+      },
+      {
+        "year": "1982",
+        "NbSongs": 3
+      },
+      {
+        "year": "1983",
+        "NbSongs": 4
+      },
+      {
+        "year": "1998",
+        "NbSongs": 6
+      },
+      {
+        "year": "2008",
+        "NbSongs": 5
+      },
+      {
+        "year": "2009",
+        "NbSongs": 5
+      },
+      {
+        "year": "2007",
+        "NbSongs": 10
+      },
+      {
+        "year": "1996",
+        "NbSongs": 2
+      },
+      {
+        "year": "2002",
+        "NbSongs": 5
+      },
+      {
+        "year": "2012",
+        "NbSongs": 4
+      },
+      {
+        "year": "2015",
+        "NbSongs": 2
+      },
+      {
+        "year": "2011",
+        "NbSongs": 2
+      },
+      {
+        "year": "1961",
+        "NbSongs": 1
+      },
+      {
+        "year": "1962",
+        "NbSongs": 2
+      },
+      {
+        "year": "1964",
+        "NbSongs": 1
+      },
+      {
+        "year": "1968",
+        "NbSongs": 4
+      },
+      {
+        "year": "1970",
+        "NbSongs": 6
+      },
+      {
+        "year": "1979",
+        "NbSongs": 4
+      },
+      {
+        "year": "1958",
+        "NbSongs": 1
+      },
+      {
+        "year": "1965",
+        "NbSongs": 1
+      },
+      {
+        "year": "1966",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Performance",
+        "rank": 1
+      },
+      {
+        "title": "Love You In Vain",
+        "rank": 8
+      },
+      {
+        "title": "Monologue on Accidents",
+        "rank": 20
+      }
+    ]
+  },
+  "Contemporary R&B": {
+    "NbSongsPerYears": [
+      {
+        "year": "2007",
+        "NbSongs": 2
+      },
+      {
+        "year": "2009",
+        "NbSongs": 1
+      },
+      {
+        "year": "2011",
+        "NbSongs": 1
+      },
+      {
+        "year": "2014",
+        "NbSongs": 1
+      },
+      {
+        "year": "2008",
+        "NbSongs": 1
+      },
+      {
+        "year": "2010",
+        "NbSongs": 1
+      },
+      {
+        "year": "2012",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Shock",
+        "rank": 71150
+      },
+      {
+        "title": "Mi Mitad",
+        "rank": 181841
+      },
+      {
+        "title": "Quizas",
+        "rank": 199490
+      }
+    ]
+  },
+  "Jazz": {
+    "NbSongsPerYears": [
+      {
+        "year": "2007",
+        "NbSongs": 10
+      },
+      {
+        "year": "2008",
+        "NbSongs": 11
+      },
+      {
+        "year": "1976",
+        "NbSongs": 8
+      },
+      {
+        "year": "1977",
+        "NbSongs": 9
+      },
+      {
+        "year": "1978",
+        "NbSongs": 8
+      },
+      {
+        "year": "1980",
+        "NbSongs": 8
+      },
+      {
+        "year": "1982",
+        "NbSongs": 6
+      },
+      {
+        "year": "1994",
+        "NbSongs": 12
+      },
+      {
+        "year": "1996",
+        "NbSongs": 28
+      },
+      {
+        "year": "2006",
+        "NbSongs": 10
+      },
+      {
+        "year": "1984",
+        "NbSongs": 9
+      },
+      {
+        "year": "1989",
+        "NbSongs": 10
+      },
+      {
+        "year": "2001",
+        "NbSongs": 7
+      },
+      {
+        "year": "1985",
+        "NbSongs": 9
+      },
+      {
+        "year": "1990",
+        "NbSongs": 15
+      },
+      {
+        "year": "1973",
+        "NbSongs": 7
+      },
+      {
+        "year": "1975",
+        "NbSongs": 9
+      },
+      {
+        "year": "1981",
+        "NbSongs": 9
+      },
+      {
+        "year": "1983",
+        "NbSongs": 8
+      },
+      {
+        "year": "1986",
+        "NbSongs": 10
+      },
+      {
+        "year": "1988",
+        "NbSongs": 22
+      },
+      {
+        "year": "1992",
+        "NbSongs": 13
+      },
+      {
+        "year": "1998",
+        "NbSongs": 16
+      },
+      {
+        "year": "2000",
+        "NbSongs": 9
+      },
+      {
+        "year": "2002",
+        "NbSongs": 20
+      },
+      {
+        "year": "2004",
+        "NbSongs": 6
+      },
+      {
+        "year": "2009",
+        "NbSongs": 23
+      },
+      {
+        "year": "1960",
+        "NbSongs": 2
+      },
+      {
+        "year": "2013",
+        "NbSongs": 12
+      },
+      {
+        "year": "1971",
+        "NbSongs": 7
+      },
+      {
+        "year": "1972",
+        "NbSongs": 7
+      },
+      {
+        "year": "2005",
+        "NbSongs": 5
+      },
+      {
+        "year": "2010",
+        "NbSongs": 5
+      },
+      {
+        "year": "2012",
+        "NbSongs": 4
+      },
+      {
+        "year": "2015",
+        "NbSongs": 3
+      },
+      {
+        "year": "2003",
+        "NbSongs": 5
+      },
+      {
+        "year": "2011",
+        "NbSongs": 13
+      },
+      {
+        "year": "1987",
+        "NbSongs": 9
+      },
+      {
+        "year": "1999",
+        "NbSongs": 8
+      },
+      {
+        "year": "1979",
+        "NbSongs": 6
+      },
+      {
+        "year": "1993",
+        "NbSongs": 8
+      },
+      {
+        "year": "1969",
+        "NbSongs": 7
+      },
+      {
+        "year": "1961",
+        "NbSongs": 3
+      },
+      {
+        "year": "1962",
+        "NbSongs": 2
+      },
+      {
+        "year": "1964",
+        "NbSongs": 7
+      },
+      {
+        "year": "1967",
+        "NbSongs": 5
+      },
+      {
+        "year": "1968",
+        "NbSongs": 10
+      },
+      {
+        "year": "1970",
+        "NbSongs": 11
+      },
+      {
+        "year": "1974",
+        "NbSongs": 7
+      },
+      {
+        "year": "1991",
+        "NbSongs": 6
+      },
+      {
+        "year": "1997",
+        "NbSongs": 8
+      },
+      {
+        "year": "1954",
+        "NbSongs": 3
+      },
+      {
+        "year": "1956",
+        "NbSongs": 7
+      },
+      {
+        "year": "1957",
+        "NbSongs": 5
+      },
+      {
+        "year": "1959",
+        "NbSongs": 4
+      },
+      {
+        "year": "1963",
+        "NbSongs": 5
+      },
+      {
+        "year": "1966",
+        "NbSongs": 6
+      },
+      {
+        "year": "1965",
+        "NbSongs": 3
+      },
+      {
+        "year": "1995",
+        "NbSongs": 10
+      },
+      {
+        "year": "1952",
+        "NbSongs": 1
+      },
+      {
+        "year": "1953",
+        "NbSongs": 3
+      },
+      {
+        "year": "1955",
+        "NbSongs": 1
+      },
+      {
+        "year": "1958",
+        "NbSongs": 2
+      },
+      {
+        "year": "2014",
+        "NbSongs": 1
+      },
+      {
+        "year": "1945",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Hot Springs Blues",
+        "rank": 1
+      },
+      {
+        "title": "All Of Me",
+        "rank": 3
+      },
+      {
+        "title": "Practice Makes Perfect",
+        "rank": 3
+      }
+    ]
+  },
+  "Jazz Fusion": {
+    "NbSongsPerYears": [
+      {
+        "year": "1976",
+        "NbSongs": 8
+      },
+      {
+        "year": "1977",
+        "NbSongs": 9
+      },
+      {
+        "year": "1978",
+        "NbSongs": 8
+      },
+      {
+        "year": "1980",
+        "NbSongs": 8
+      },
+      {
+        "year": "1982",
+        "NbSongs": 6
+      },
+      {
+        "year": "1994",
+        "NbSongs": 12
+      },
+      {
+        "year": "1996",
+        "NbSongs": 28
+      },
+      {
+        "year": "2006",
+        "NbSongs": 10
+      },
+      {
+        "year": "1984",
+        "NbSongs": 1
+      },
+      {
+        "year": "1987",
+        "NbSongs": 9
+      },
+      {
+        "year": "1988",
+        "NbSongs": 1
+      },
+      {
+        "year": "1989",
+        "NbSongs": 1
+      },
+      {
+        "year": "1999",
+        "NbSongs": 8
+      },
+      {
+        "year": "2000",
+        "NbSongs": 3
+      },
+      {
+        "year": "1992",
+        "NbSongs": 2
+      },
+      {
+        "year": "1993",
+        "NbSongs": 1
+      },
+      {
+        "year": "1998",
+        "NbSongs": 1
+      },
+      {
+        "year": "2002",
+        "NbSongs": 1
+      },
+      {
+        "year": "2004",
+        "NbSongs": 1
+      },
+      {
+        "year": "2005",
+        "NbSongs": 1
+      },
+      {
+        "year": "2007",
+        "NbSongs": 2
+      },
+      {
+        "year": "2012",
+        "NbSongs": 1
+      },
+      {
+        "year": "2014",
+        "NbSongs": 1
+      },
+      {
+        "year": "1968",
+        "NbSongs": 1
+      },
+      {
+        "year": "1969",
+        "NbSongs": 1
+      },
+      {
+        "year": "1970",
+        "NbSongs": 1
+      },
+      {
+        "year": "1971",
+        "NbSongs": 1
+      },
+      {
+        "year": "1972",
+        "NbSongs": 2
+      },
+      {
+        "year": "1973",
+        "NbSongs": 1
+      },
+      {
+        "year": "1974",
+        "NbSongs": 1
+      },
+      {
+        "year": "1975",
+        "NbSongs": 1
+      },
+      {
+        "year": "1995",
+        "NbSongs": 1
+      },
+      {
+        "year": "1997",
+        "NbSongs": 3
+      },
+      {
+        "year": "1979",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Andy Summers & Robert Fripp:Train",
+        "rank": 10
+      },
+      {
+        "title": "Andy Summers & Robert Fripp:Hardy Country",
+        "rank": 41
+      },
+      {
+        "title": "Andy Summers & Robert Fripp:Painting And Dance",
+        "rank": 50
+      }
+    ]
+  },
+  "Free Jazz": {
+    "NbSongsPerYears": [
+      {
+        "year": "1973",
+        "NbSongs": 1
+      },
+      {
+        "year": "1974",
+        "NbSongs": 1
+      },
+      {
+        "year": "1975",
+        "NbSongs": 1
+      },
+      {
+        "year": "1976",
+        "NbSongs": 1
+      },
+      {
+        "year": "1978",
+        "NbSongs": 1
+      },
+      {
+        "year": "1980",
+        "NbSongs": 1
+      },
+      {
+        "year": "1997",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Il Massacro Di Brandeburgo Numero Tre In Sol Maggiore",
+        "rank": 150239
+      },
+      {
+        "title": "Caos (Parte Seconda)",
+        "rank": 179082
+      },
+      {
+        "title": "Lobotomia",
+        "rank": 202873
+      }
+    ]
+  },
+  "Folk": {
+    "NbSongsPerYears": [
+      {
+        "year": "2001",
+        "NbSongs": 19
+      },
+      {
+        "year": "2003",
+        "NbSongs": 28
+      },
+      {
+        "year": "2005",
+        "NbSongs": 39
+      },
+      {
+        "year": "2007",
+        "NbSongs": 28
+      },
+      {
+        "year": "2010",
+        "NbSongs": 42
+      },
+      {
+        "year": "2000",
+        "NbSongs": 12
+      },
+      {
+        "year": "2013",
+        "NbSongs": 11
+      },
+      {
+        "year": "1993",
+        "NbSongs": 12
+      },
+      {
+        "year": "1995",
+        "NbSongs": 8
+      },
+      {
+        "year": "2002",
+        "NbSongs": 21
+      },
+      {
+        "year": "2006",
+        "NbSongs": 21
+      },
+      {
+        "year": "2008",
+        "NbSongs": 24
+      },
+      {
+        "year": "2012",
+        "NbSongs": 18
+      },
+      {
+        "year": "1956",
+        "NbSongs": 3
+      },
+      {
+        "year": "1991",
+        "NbSongs": 6
+      },
+      {
+        "year": "1958",
+        "NbSongs": 5
+      },
+      {
+        "year": "1976",
+        "NbSongs": 15
+      },
+      {
+        "year": "1977",
+        "NbSongs": 9
+      },
+      {
+        "year": "1978",
+        "NbSongs": 22
+      },
+      {
+        "year": "1980",
+        "NbSongs": 13
+      },
+      {
+        "year": "1981",
+        "NbSongs": 16
+      },
+      {
+        "year": "1983",
+        "NbSongs": 18
+      },
+      {
+        "year": "1985",
+        "NbSongs": 14
+      },
+      {
+        "year": "1994",
+        "NbSongs": 21
+      },
+      {
+        "year": "1997",
+        "NbSongs": 30
+      },
+      {
+        "year": "2004",
+        "NbSongs": 16
+      },
+      {
+        "year": "1990",
+        "NbSongs": 15
+      },
+      {
+        "year": "1972",
+        "NbSongs": 8
+      },
+      {
+        "year": "1970",
+        "NbSongs": 6
+      },
+      {
+        "year": "1971",
+        "NbSongs": 11
+      },
+      {
+        "year": "1973",
+        "NbSongs": 11
+      },
+      {
+        "year": "1974",
+        "NbSongs": 17
+      },
+      {
+        "year": "1975",
+        "NbSongs": 9
+      },
+      {
+        "year": "1979",
+        "NbSongs": 14
+      },
+      {
+        "year": "1998",
+        "NbSongs": 9
+      },
+      {
+        "year": "2009",
+        "NbSongs": 15
+      },
+      {
+        "year": "1982",
+        "NbSongs": 5
+      },
+      {
+        "year": "1984",
+        "NbSongs": 4
+      },
+      {
+        "year": "1986",
+        "NbSongs": 6
+      },
+      {
+        "year": "1987",
+        "NbSongs": 7
+      },
+      {
+        "year": "1969",
+        "NbSongs": 7
+      },
+      {
+        "year": "2011",
+        "NbSongs": 13
+      },
+      {
+        "year": "1988",
+        "NbSongs": 8
+      },
+      {
+        "year": "1989",
+        "NbSongs": 6
+      },
+      {
+        "year": "1992",
+        "NbSongs": 12
+      },
+      {
+        "year": "1999",
+        "NbSongs": 15
+      },
+      {
+        "year": "1996",
+        "NbSongs": 11
+      },
+      {
+        "year": "2014",
+        "NbSongs": 5
+      },
+      {
+        "year": "1968",
+        "NbSongs": 3
+      },
+      {
+        "year": "2015",
+        "NbSongs": 7
+      },
+      {
+        "year": "1966",
+        "NbSongs": 5
+      },
+      {
+        "year": "1967",
+        "NbSongs": 7
+      },
+      {
+        "year": "1954",
+        "NbSongs": 3
+      },
+      {
+        "year": "1957",
+        "NbSongs": 5
+      },
+      {
+        "year": "1959",
+        "NbSongs": 4
+      },
+      {
+        "year": "1960",
+        "NbSongs": 2
+      },
+      {
+        "year": "1963",
+        "NbSongs": 5
+      },
+      {
+        "year": "1964",
+        "NbSongs": 4
+      },
+      {
+        "year": "1965",
+        "NbSongs": 5
+      },
+      {
+        "year": "1928",
+        "NbSongs": 1
+      },
+      {
+        "year": "1962",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Live In A Van",
+        "rank": 2
+      },
+      {
+        "title": "Love You In Vain",
+        "rank": 8
+      },
+      {
+        "title": "Escape Velocity",
+        "rank": 13
+      }
+    ]
+  },
+  "Folk Rock": {
+    "NbSongsPerYears": [
+      {
+        "year": "2011",
+        "NbSongs": 13
+      },
+      {
+        "year": "1999",
+        "NbSongs": 5
+      },
+      {
+        "year": "2000",
+        "NbSongs": 7
+      },
+      {
+        "year": "2001",
+        "NbSongs": 12
+      },
+      {
+        "year": "2003",
+        "NbSongs": 7
+      },
+      {
+        "year": "2004",
+        "NbSongs": 6
+      },
+      {
+        "year": "2014",
+        "NbSongs": 5
+      },
+      {
+        "year": "1992",
+        "NbSongs": 5
+      },
+      {
+        "year": "1993",
+        "NbSongs": 6
+      },
+      {
+        "year": "1994",
+        "NbSongs": 7
+      },
+      {
+        "year": "1996",
+        "NbSongs": 5
+      },
+      {
+        "year": "1997",
+        "NbSongs": 8
+      },
+      {
+        "year": "1998",
+        "NbSongs": 9
+      },
+      {
+        "year": "2002",
+        "NbSongs": 9
+      },
+      {
+        "year": "2005",
+        "NbSongs": 10
+      },
+      {
+        "year": "2009",
+        "NbSongs": 8
+      },
+      {
+        "year": "1967",
+        "NbSongs": 5
+      },
+      {
+        "year": "1969",
+        "NbSongs": 17
+      },
+      {
+        "year": "1970",
+        "NbSongs": 4
+      },
+      {
+        "year": "1972",
+        "NbSongs": 6
+      },
+      {
+        "year": "1973",
+        "NbSongs": 5
+      },
+      {
+        "year": "1975",
+        "NbSongs": 6
+      },
+      {
+        "year": "1976",
+        "NbSongs": 4
+      },
+      {
+        "year": "1977",
+        "NbSongs": 7
+      },
+      {
+        "year": "1978",
+        "NbSongs": 4
+      },
+      {
+        "year": "1980",
+        "NbSongs": 4
+      },
+      {
+        "year": "1981",
+        "NbSongs": 7
+      },
+      {
+        "year": "1984",
+        "NbSongs": 4
+      },
+      {
+        "year": "1988",
+        "NbSongs": 3
+      },
+      {
+        "year": "1995",
+        "NbSongs": 8
+      },
+      {
+        "year": "2008",
+        "NbSongs": 7
+      },
+      {
+        "year": "1971",
+        "NbSongs": 11
+      },
+      {
+        "year": "1974",
+        "NbSongs": 17
+      },
+      {
+        "year": "1979",
+        "NbSongs": 14
+      },
+      {
+        "year": "1983",
+        "NbSongs": 3
+      },
+      {
+        "year": "1985",
+        "NbSongs": 3
+      },
+      {
+        "year": "1991",
+        "NbSongs": 6
+      },
+      {
+        "year": "2006",
+        "NbSongs": 7
+      },
+      {
+        "year": "1982",
+        "NbSongs": 5
+      },
+      {
+        "year": "1986",
+        "NbSongs": 6
+      },
+      {
+        "year": "1987",
+        "NbSongs": 7
+      },
+      {
+        "year": "1990",
+        "NbSongs": 2
+      },
+      {
+        "year": "2010",
+        "NbSongs": 5
+      },
+      {
+        "year": "2013",
+        "NbSongs": 6
+      },
+      {
+        "year": "2007",
+        "NbSongs": 8
+      },
+      {
+        "year": "1968",
+        "NbSongs": 3
+      },
+      {
+        "year": "1989",
+        "NbSongs": 2
+      },
+      {
+        "year": "2012",
+        "NbSongs": 7
+      },
+      {
+        "year": "2015",
+        "NbSongs": 4
+      },
+      {
+        "year": "1958",
+        "NbSongs": 1
+      },
+      {
+        "year": "1959",
+        "NbSongs": 2
+      },
+      {
+        "year": "1960",
+        "NbSongs": 4
+      },
+      {
+        "year": "1961",
+        "NbSongs": 6
+      },
+      {
+        "year": "1962",
+        "NbSongs": 2
+      },
+      {
+        "year": "1963",
+        "NbSongs": 3
+      },
+      {
+        "year": "1964",
+        "NbSongs": 2
+      },
+      {
+        "year": "1965",
+        "NbSongs": 1
+      },
+      {
+        "year": "1966",
+        "NbSongs": 2
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Let Me In",
+        "rank": 1
+      },
+      {
+        "title": "Let Me In",
+        "rank": 1
+      },
+      {
+        "title": "Brezhoneg' Raok",
+        "rank": 42
+      }
+    ]
+  },
+  "Americana": {
+    "NbSongsPerYears": [
+      {
+        "year": "2012",
+        "NbSongs": 2
+      },
+      {
+        "year": "2015",
+        "NbSongs": 5
+      },
+      {
+        "year": "2006",
+        "NbSongs": 4
+      },
+      {
+        "year": "2007",
+        "NbSongs": 2
+      },
+      {
+        "year": "2011",
+        "NbSongs": 3
+      },
+      {
+        "year": "2002",
+        "NbSongs": 1
+      },
+      {
+        "year": "2004",
+        "NbSongs": 2
+      },
+      {
+        "year": "1973",
+        "NbSongs": 1
+      },
+      {
+        "year": "1974",
+        "NbSongs": 1
+      },
+      {
+        "year": "1975",
+        "NbSongs": 1
+      },
+      {
+        "year": "1976",
+        "NbSongs": 1
+      },
+      {
+        "year": "1977",
+        "NbSongs": 1
+      },
+      {
+        "year": "1978",
+        "NbSongs": 1
+      },
+      {
+        "year": "1985",
+        "NbSongs": 2
+      },
+      {
+        "year": "1987",
+        "NbSongs": 2
+      },
+      {
+        "year": "1988",
+        "NbSongs": 1
+      },
+      {
+        "year": "1990",
+        "NbSongs": 3
+      },
+      {
+        "year": "1993",
+        "NbSongs": 1
+      },
+      {
+        "year": "1997",
+        "NbSongs": 1
+      },
+      {
+        "year": "1999",
+        "NbSongs": 1
+      },
+      {
+        "year": "2003",
+        "NbSongs": 4
+      },
+      {
+        "year": "1986",
+        "NbSongs": 2
+      },
+      {
+        "year": "1989",
+        "NbSongs": 1
+      },
+      {
+        "year": "1994",
+        "NbSongs": 1
+      },
+      {
+        "year": "1995",
+        "NbSongs": 3
+      },
+      {
+        "year": "2001",
+        "NbSongs": 1
+      },
+      {
+        "year": "2005",
+        "NbSongs": 1
+      },
+      {
+        "year": "2008",
+        "NbSongs": 1
+      },
+      {
+        "year": "2010",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Riverside",
+        "rank": 2634
+      },
+      {
+        "title": "Hammer Of The Honky-Tonk Gods",
+        "rank": 53511
+      },
+      {
+        "title": "Rocks Into Sand",
+        "rank": 53511
+      }
+    ]
+  },
+  "Celtic": {
+    "NbSongsPerYears": [
+      {
+        "year": "1970",
+        "NbSongs": 6
+      },
+      {
+        "year": "1971",
+        "NbSongs": 11
+      },
+      {
+        "year": "1972",
+        "NbSongs": 1
+      },
+      {
+        "year": "1973",
+        "NbSongs": 11
+      },
+      {
+        "year": "1974",
+        "NbSongs": 17
+      },
+      {
+        "year": "1975",
+        "NbSongs": 9
+      },
+      {
+        "year": "1976",
+        "NbSongs": 1
+      },
+      {
+        "year": "1977",
+        "NbSongs": 1
+      },
+      {
+        "year": "1978",
+        "NbSongs": 1
+      },
+      {
+        "year": "1979",
+        "NbSongs": 14
+      },
+      {
+        "year": "1981",
+        "NbSongs": 1
+      },
+      {
+        "year": "1983",
+        "NbSongs": 3
+      },
+      {
+        "year": "1985",
+        "NbSongs": 3
+      },
+      {
+        "year": "1991",
+        "NbSongs": 6
+      },
+      {
+        "year": "1993",
+        "NbSongs": 1
+      },
+      {
+        "year": "1995",
+        "NbSongs": 2
+      },
+      {
+        "year": "1998",
+        "NbSongs": 9
+      },
+      {
+        "year": "2000",
+        "NbSongs": 1
+      },
+      {
+        "year": "2002",
+        "NbSongs": 1
+      },
+      {
+        "year": "2006",
+        "NbSongs": 7
+      },
+      {
+        "year": "2009",
+        "NbSongs": 15
+      },
+      {
+        "year": "2007",
+        "NbSongs": 2
+      },
+      {
+        "year": "2008",
+        "NbSongs": 2
+      },
+      {
+        "year": "2010",
+        "NbSongs": 2
+      },
+      {
+        "year": "2011",
+        "NbSongs": 1
+      },
+      {
+        "year": "2012",
+        "NbSongs": 1
+      },
+      {
+        "year": "2013",
+        "NbSongs": 1
+      },
+      {
+        "year": "1996",
+        "NbSongs": 1
+      },
+      {
+        "year": "2003",
+        "NbSongs": 1
+      },
+      {
+        "year": "2004",
+        "NbSongs": 1
+      }
+    ],
+    "topThreeRankedSongs": [
+      {
+        "title": "Brezhoneg' Raok",
+        "rank": 42
+      },
+      {
+        "title": "Brezhoneg Raok",
+        "rank": 42
+      },
+      {
+        "title": "In Trim / Mount Hooley / Lemington Bank",
+        "rank": 10900
+      }
+    ]
+  }
+}

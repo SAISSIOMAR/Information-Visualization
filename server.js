@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 50005;
+const port = 1000;
 
 // Cette ligne indique le répertoire qui contient
 // les fichiers statiques: html, css, js, images etc.
@@ -14,6 +14,9 @@ app.get('/youssef', (req, res) => {
   res.sendFile(__dirname + '/youssef/index.html');
 });
 
+app.get('/omar', (req, res) => {
+  res.sendFile(__dirname + '/public/omar/index.html');
+});
 app.listen(port, () => {
   var url = `http://localhost:${port}`
   console.log('Example app listening at '+url);
