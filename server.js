@@ -25,6 +25,10 @@ app.get('/ali', (req, res) => {
 app.get('/omar', (req, res) => {
   res.sendFile(__dirname + '/public/omar/index.html');
 });
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
+});
 app.listen(port, () => {
   var url = `http://localhost:${port}`
   console.log('Example app listening at '+url);

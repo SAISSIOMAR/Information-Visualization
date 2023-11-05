@@ -5,6 +5,7 @@
     <title>Bubble Plot with D3.js</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         /* General styles */
         body {
@@ -16,6 +17,18 @@
             align-items: center;
             height: 100vh;
             font-family: 'Arial', sans-serif;
+        }
+        .home-button {
+            background-color: #000000;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
 
         /* Styles for the SVG and its elements */
@@ -163,6 +176,10 @@
     </style>
 </head>
 <body>
+<button class="home-button" onclick="navigateToHomePage()">
+    <i class="fas fa-home"></i>
+</button>
+
 
     <iframe id="backgroundPage" src="./background.html"></iframe>
 
@@ -202,6 +219,9 @@
     </div>
 
     <svg width="960" height="450"></svg>
+<script>function navigateToHomePage() {
+    window.location.href = '/';
+}</script>
 
     <script>
 
@@ -337,7 +357,7 @@
             .attr("dy", "1em")
             .style("text-anchor", "middle")
             .text("Lifespan in Years");
-            
+
             // Initial plot update
             updatePlot();
 

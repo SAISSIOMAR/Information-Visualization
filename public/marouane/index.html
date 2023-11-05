@@ -8,59 +8,72 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
 <style>
     body {
-        background-color: #f9f9f9; 
-        font-family:'Times New Roman';       
+        background-color: #f9f9f9;
+        font-family:'Times New Roman';
+    }
+    .home-button {
+        background-color: #000000;
+        color: #fff;
+        font-size: 10px;
+        padding: 5px 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
     }
 
     .tooltip {
-        z-index: 1000; 
+        z-index: 1000;
         position: absolute;
         padding: 10px 15px;
         background-color: rgb(94, 94, 94);
         border-radius: 8px;
         font-family:'Times New Roman';
         font-size: 14px;
-        color:  #ffffff; 
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
-        pointer-events: none; 
-        transition: opacity 0.1s; 
-        border: 1px solid #ddd; 
+        color:  #ffffff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+        transition: opacity 0.1s;
+        border: 1px solid #ddd;
     }
 
     .container {
         padding: 25px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
-        background-color: #ffffff; 
-        border-radius: 10px; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        background-color: #ffffff;
+        border-radius: 10px;
         display: flex;
         align-items: flex-start;
     }
 
     .word-cloud {
-        flex: 1; 
+        flex: 1;
     }
 
     .filters {
-        border-radius: 8px; 
+        border-radius: 8px;
         padding-left: 20px;
-        width: 250px; 
+        width: 250px;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         flex-grow: 1;
     }
     #filters label {
-        display: block;  
-        margin-bottom: 5px; 
+        display: block;
+        margin-bottom: 5px;
     }
 
     #filters input[type="checkbox"] {
-        margin-right: 5px; 
+        margin-right: 5px;
     }
 
     #labelCount {
@@ -92,7 +105,7 @@
         width: fit-content;
         position: absolute;
         background-color: rgb(163, 163, 163);
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); 
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
         border: 1px solid #ddd;
         border-radius: 13px ;
         padding: 20px;
@@ -104,20 +117,20 @@
         font-size: 12px;
     }
 
-    
+
     #filters label, #filters input[type="checkbox"] {
     cursor: pointer;
     font-size: 15px;
     font-family: 'Times New Roman';
     }
 
-   
+
     .genre:hover .subgenres {
         display: block;
     }
 
     #year-range {
-        width: 80%; 
+        width: 80%;
         margin: 10px auto;
     }
 
@@ -125,7 +138,7 @@
         border: 8px solid;
         border-image-slice: 1;
         border-image-source: linear-gradient(45deg, #f06, rgb(99, 74, 192));
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); 
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
     }
 
 #title {
@@ -188,12 +201,15 @@
 </style>
 
 <body>
-    <div class="container">    
+<button class="home-button" onclick="navigateToHomePage()">
+    <i class="fas fa-home"></i>
+</button>
+    <div class="container">
         <div class="word-cloud">
             <div id="my_dataviz"></div>
         </div>
         <div class="filters">
-            <h1 id="Bigtitle" >Labels' Word Cloud</h1> 
+            <h1 id="Bigtitle" >Labels' Word Cloud</h1>
             <div class="legende">
                 <div id="labelCount">Number of labels: 0</div>
                   <div class="legend-box" >
@@ -210,7 +226,7 @@
                   </div>
             </div>
             <div style="margin: 15px 0px;" class="legende">
-            <h3 id="title" >Filter By "Genres"</h1> 
+            <h3 id="title" >Filter By "Genres"</h1>
             <div id="filters">
                 <label class="genre">
                     <input type="checkbox" value="Rock & Variations" checked> Rock & Variations
@@ -229,7 +245,7 @@
                             <li>Garage Rock</li>
                         </ul>
                     </div>
-                    
+
                 </label>
                 <label class="genre">
                     <input type="checkbox" value="Pop & Variations" checked> Pop & Variations
@@ -242,7 +258,7 @@
                             <li>Pop Punk</li>
                         </ul>
                     </div>
-                    
+
                 </label>
                 <label class="genre">
                     <input type="checkbox" value="Metal & Variations" checked> Metal & Variations
@@ -258,7 +274,7 @@
                             <li>Death Metal</li>
                         </ul>
                     </div>
-                    
+
                 </label>
                 <label class="genre">
                     <input type="checkbox" value="Hip Hop & Rap" checked> Hip Hop & Rap
@@ -286,8 +302,8 @@
                             <li>Industrial Rock</li>
                         </ul>
                     </div>
-                    
-                    
+
+
                 </label>
                 <label class="genre">
                     <input type="checkbox" value="Core & Variations" checked> Core & Variations
@@ -330,23 +346,25 @@
                             <li>Neoclassical</li>
                             <li>Children's Music</li>
                         </ul>
-                    </div>                    
+                    </div>
                 </label>
             </div>
         </div>
         <div class="legende">
-            <h3 id="title" >Filter By "Years Range"</h1> 
+            <h3 id="title" >Filter By "Years Range"</h1>
             <div id="year-range">
                 <div style="margin-bottom: 10px;" id="slider-range"></div>
                 <span id="startYearDisplay">1980</span> - <span id="endYearDisplay">2023</span>
             </div>
         </div>
-            
-            
+
+
         </div>
     </div>
+<script>function navigateToHomePage() {
+    window.location.href = '/';
+}</script>
 
-    
     <script>
         $(function() {
             $("#slider-range").slider({
@@ -360,7 +378,7 @@
                 }
             });
         });
-    
+
         const genreMapping = {
             "Rock & Variations": ["Rock", "Alternative Rock", "Indie Rock", "Pop Rock", "Punk Rock", "Piano Rock", "Hard Rock", "Progressive Rock", "Post-Punk", "Garage Rock"],
             "Pop & Variations": ["Pop", "Indie Pop", "Teen Pop", "Pop Punk"],
@@ -377,7 +395,7 @@
                 .flatMap(input => genreMapping[input.value]);
         }
 
-    
+
         function updateWordCloud() {
             d3.json('artists.json').then(data => {
                 const selectedGenres = getSelectedGenres();
@@ -386,14 +404,14 @@
                     $("#slider-range").slider("values", 1)
                 ];
                 const labelData = Object.entries(data)
-                .filter(([label, info]) => 
-                    info.Artists.some(artist => 
+                .filter(([label, info]) =>
+                    info.Artists.some(artist =>
                         Math.max(...artist.PublicationDates.map(Number)) >= selectedYearRange[0] &&
                         Math.min(...artist.PublicationDates.map(Number)) <= selectedYearRange[1]
                     )
                 )
-                .filter(([label, info]) => 
-                    info.GenresFromArtistes.some(genre => 
+                .filter(([label, info]) =>
+                    info.GenresFromArtistes.some(genre =>
                         selectedGenres.includes(genre)
                     )
                 )
@@ -401,15 +419,15 @@
                     text: label,
                     originalSize: info.NbTotalArtiste,
                     topThreeRankedSongs: info.topThreeRankedSongs,
-                    size: info.Artists.filter(artist => 
+                    size: info.Artists.filter(artist =>
                         Math.max(...artist.PublicationDates.map(Number)) >= selectedYearRange[0] &&
                         Math.min(...artist.PublicationDates.map(Number)) <= selectedYearRange[1]
-                    ).length 
+                    ).length
                 }));
 
                    const maxLabel = Math.max(...labelData.map(d => d.size));
                     const minLabel = Math.min(...labelData.map(d => d.size));
-    
+
                     d3.select("#maxLabelSize").text(`Label with the most artists: ${maxLabel} artists`);
                     d3.select("#minLabelSize").text(`Label with the least artist: ${minLabel} artist`);
                     d3.select("#averageLabelSize").text(`Other Labels: between ${minLabel+1} and ${maxLabel-1} artists`);
@@ -418,19 +436,19 @@
                 const labelSizeScale = d3.scaleLinear()
                     .domain([0, d3.max(labelData, d => d.size)])
                     .range([10, 50]);
-    
+
                 d3.select("svg").remove();
-    
+
                 const width = 1000;
                 const height = 550;
-                
-                
+
+
                 const layout = d3.layout.cloud()
                     .size([width, height])
                     .words(labelData.map(d => {
-                        return { 
-                            text: d.text, 
-                            size: labelSizeScale(d.size), 
+                        return {
+                            text: d.text,
+                            size: labelSizeScale(d.size),
                             NbTotalArtiste: d.size,
                             topArtists: d.topThreeRankedSongs,
                         };
@@ -439,11 +457,11 @@
                     .rotate(function() { return ~~(Math.random() * 2) * 90; })
                     .fontSize(d => d.size)
                     .on("end", draw);
-    
+
                 layout.start();
 
-                
-    
+
+
                 function draw(words) {
                 const svg = d3.select("#my_dataviz")
                     .append("svg")
@@ -451,7 +469,7 @@
                     .attr("height", height)
                     .append("g")
                     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-                    
+
                     const maxLabelObject = labelData.reduce((max, curr) => curr.size > max.size ? curr : max, {
                         size: -Infinity
                     });
@@ -469,7 +487,7 @@
                 const tooltip = d3.select("body").append("div")
                     .attr("class", "tooltip")
                     .style("opacity", 0);
-                
+
                 const labels = svg.selectAll("text")
                     .data(words)
                     .enter().append("text")
@@ -484,7 +502,7 @@
                         } else {
                             return '#F2DC18';
                         }
-                    })     
+                    })
                     .attr("text-anchor", "middle")
                     .attr("transform", d => "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")")
                     .text(d => d.text)
@@ -506,7 +524,7 @@
                             tooltip.html(`
                                 <div style="padding: 10px; border-radius: 4px; background: rgba(250, 250, 250, 0.9); color: #333;">
                                     <strong>Total Artists:</strong> ${d.NbTotalArtiste}<br><br>
-                                    <strong>Top Artist :${d.topArtists[0].artiste}</strong> 
+                                    <strong>Top Artist :${d.topArtists[0].artiste}</strong>
                                     <ul>
                                     <li>
                                     <div style="margin-left: 10px; margin-top: 5px;">
@@ -535,18 +553,18 @@
                             .style("max-width", "300px")
                             .style("pointer-events", "none");
 
-                            
+
 
                             let dx = 0;
-                            let dy = 0; 
+                            let dy = 0;
 
                             const enlargedFontSize = d.size * 1.5;
                             const textWidth = this.getComputedTextLength();
 
-                        
+
                             d3.select(this)
-                            .style("font-size", d => (d.size * 2) + "px"); 
-                            
+                            .style("font-size", d => (d.size * 2) + "px");
+
                         labels.style("opacity", label => label.text === d.text ? 1 : 0.1);
                     })
                     .on("mouseout", function() {
@@ -555,26 +573,26 @@
                             .style("opacity", 0);
                             d3.select(this)
                             .style("font-size", d => (d.size) + "px");
-                            
+
                         labels.style("opacity", 1);
                     });
             }
 
             });
         }
-    
+
         document.querySelectorAll('#filters input').forEach(input => {
             input.addEventListener('change', updateWordCloud);
         });
-    
+
         updateWordCloud();
-    
+
         $("#slider-range").on("slidechange", function(event, ui) {
             updateWordCloud();
         });
-    
+
     </script>
-    
+
 </body>
 
 </html>
