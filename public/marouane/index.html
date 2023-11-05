@@ -348,7 +348,6 @@
 
     
     <script>
-        // Slider initialization
         $(function() {
             $("#slider-range").slider({
                 range: true,
@@ -405,14 +404,12 @@
                     size: info.Artists.filter(artist => 
                         Math.max(...artist.PublicationDates.map(Number)) >= selectedYearRange[0] &&
                         Math.min(...artist.PublicationDates.map(Number)) <= selectedYearRange[1]
-                    ).length // adjust size based on filtered artists
+                    ).length 
                 }));
 
-                   // Calculate max and min label sizes
                    const maxLabel = Math.max(...labelData.map(d => d.size));
                     const minLabel = Math.min(...labelData.map(d => d.size));
     
-                    // Update the text of the respective div elements
                     d3.select("#maxLabelSize").text(`Label with the most artists: ${maxLabel} artists`);
                     d3.select("#minLabelSize").text(`Label with the least artist: ${minLabel} artist`);
                     d3.select("#averageLabelSize").text(`Other Labels: between ${minLabel+1} and ${maxLabel-1} artists`);
@@ -428,9 +425,6 @@
                 const height = 550;
                 
                 
-                
-    
-                // D3 Cloud setup
                 const layout = d3.layout.cloud()
                     .size([width, height])
                     .words(labelData.map(d => {
@@ -462,14 +456,12 @@
                         size: -Infinity
                     });
 
-                    // Extracting the size value and ensuring it's a number
                     const maxLabelSize = Number(maxLabelObject.size);
                     console.log('max label size is:', maxLabelSize);
 
                     const minLabelObject = labelData.reduce((min, curr) => curr.size < min.size ? curr : min, {
                         size: Infinity
                     });
-                    // Extracting the size value and ensuring it's a number
                     const minLabelSize = Number(minLabelObject.size);
                     console.log('min label size is:', minLabelSize);
 
@@ -500,8 +492,6 @@
                         tooltip.transition()
                             .duration(200)
                             .style("opacity", 0.9);
-                             // Check if topThreeRankedSongs is defined and is an array
-                             // Check if 'topThreeRankedSongs' is defined and is an array.
                              let topArtistsContent = "";
                             let rankSum = 0;
                             if (Array.isArray(d.topArtists) && d.topArtists.length > 0) {
@@ -511,8 +501,6 @@
                                 }).join("<br>");
                             } else {
                                 topArtistsContent = "No data available";
-                                // Debugging: Log a warning to the console.
-                                console.warn("No topArtists data available for:", d);
                             }
 
                             tooltip.html(`
@@ -549,8 +537,8 @@
 
                             
 
-                            let dx = 0; // Horizontal shift
-                            let dy = 0; // Vertical shift
+                            let dx = 0;
+                            let dy = 0; 
 
                             const enlargedFontSize = d.size * 1.5;
                             const textWidth = this.getComputedTextLength();
