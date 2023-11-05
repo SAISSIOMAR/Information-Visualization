@@ -6,14 +6,24 @@
 
 	<!-- import the d3 library -->
 	<!-- <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script> -->
-    <script type='text/javascript' src='lib/d3.v5.min.js'></script>
+	<script type='text/javascript' src='lib/d3.v5.min.js'></script>
 
 	<!-- style sheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<p> youssef c'est à toi maintenant </p>
+<p>Youssef, c'est à toi maintenant</p>
 
+<!-- Add a button to navigate to the other HTML file -->
+<button onclick="navigateToYoussefPage()">Go to Youssef's Page</button>
+
+<script>
+	// JavaScript function to navigate to the other HTML file
+	function navigateToYoussefPage() {
+		// Redirect to the other HTML file
+		window.location.href = '/youssef';
+	}
+</script>
 </body>
 </html>
