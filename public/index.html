@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
-
-	<!-- import the d3 library -->
+	<title>Accueil</title>
+	<!-- Import d3.js if needed -->
 	<!-- <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script> -->
+
 	<script type='text/javascript' src='lib/d3.v5.min.js'></script>
 
 	<!-- style sheet -->
@@ -13,17 +13,46 @@
 </head>
 
 <body>
-<p>Youssef, c'est à toi maintenant</p>
 
-<!-- Add a button to navigate to the other HTML file -->
-<button onclick="navigateToYoussefPage()">Go to Youssef's Page</button>
+<div class="container">
+	<h1>nformation Visualization</h1>
+
+	<div class="navigation-grid">
+		<div class="circle" onclick="navigateToYoussefPage()" style="background-image: url('assets/circle-packing.png');">
+			<span class="circle-title">Circle Packing</span>
+		</div>
+		<div class="circle" onclick="navigateToAliPage()" style="background-image: url('assets/bubbleChart.png');">
+			<span class="circle-title">Bubble Plot</span>
+		</div>
+		<div class="circle" onclick="navigateToMarouanePage()" style="background-image: url('assets/cloudword.jpg');">
+			<span class="circle-title">Cloud Visualisation</span>
+		</div>
+		<div class="circle" onclick="navigateToOmarPage()" style="background-image: url('assets/stackedarea.png');">
+			<span class="circle-title">Stacked Area</span>
+		</div>
+	</div>
+	
+</div>
 
 <script>
-	// JavaScript function to navigate to the other HTML file
+	// JavaScript functions to navigate to the other HTML files
 	function navigateToYoussefPage() {
-		// Redirect to the other HTML file
 		window.location.href = '/youssef';
 	}
+
+	function navigateToAliPage() {
+		window.location.href = '/ali';
+	}
+
+	function navigateToMarouanePage() {
+		window.location.href = '/marouane';
+	}
+
+	function navigateToOmarPage() {
+		window.location.href = '/omar';
+	}
+
 </script>
+
 </body>
 </html>

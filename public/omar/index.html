@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.js"></script>
+
+    <style>
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .tooltip-rectangle {
+            position: absolute;
+            width: 60px;
+            height: 20px;
+            background: #333;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .noUi-horizontal .noUi-handle {
+            width: 10px;
+            height: 15px;
+            right: -9px;
+            top: -2px;
+        }
+        .noUi-handle:after, .noUi-handle:before {
+            display: none;
+            position: absolute;
+            height: 14px;
+            width: 1px;
+            background: #E8E7E6;
+            left: 14px;
+            top: 6px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #my_dataviz {
+            width: 1200px;
+            height: 550px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            padding-bottom: 40px;
+        }
+
+        .legend {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .legend-item {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .legend-key {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+        }
+
+        .date-slider {
+            width: 140px;
+            margin-top: 30px;
+        }
+        .checkbox-container label {
+            display: block;
+        }
+
+        .checkbox-container input {
+            margin-right: 5px;
+            margin-bottom: 8px;
+        }
+        /* Center the date slider */
+        #slider {
+            margin: 0 auto;
+        }
+        #date-min {
+            float: left;
+            font-size: 12px;
+        }
+
+        #date-max {
+            float: right;
+            font-size: 12px;
+        }
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .back-button {
+            background-color: #0074d9;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 40px;
+            left: 180px;
+        }
+        .noUi-horizontal {
+            height: 13px;
+        }
+        .checkbox-container {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: 150px;
+            margin-bottom: 15px;
+        }
+        .main-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .data-slider-container {
+            width: 200px;
+            height: 200px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-left: 20px;
+            width: 150px;
+            height: 100px
+        }
+        .title {
+            font-size: 25px;
+            text-align: center;
+            color: #553c9a;
+            font-weight: bold;
+            margin-top: 20px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 10px;
+        }
+
+
+
+
+
+
+        .filter-genre {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+            font-weight: lighter;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 13px;
+        }
+        .filter-date {
+            display: block;
+            text-align: center;
+            background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: lighter;
+            color: #333;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .focused-area {
+            stroke: #000;
+            stroke-width: 2;
+            fill-opacity: 0.7;
+        }
+        /* CSS for adjusting x-axis tick labels */
+        .x-axis text {
+            text-anchor: middle;
+            transform: translateX(-10px) rotate(0);
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div id="back-button-container" style="display: none">
+    <button id="back-button">Back</button>
+</div>
+
+<div class="title">Stacked Area: Music Genre Evolution</div>
+
+
+
+<div class="main-container">
+    <div id="my_dataviz">
+        <div class="legend"></div>
+    </div>
+    <div class="checkboxes-and-dataslider-container">
+    <div class="checkbox-container">
+        <label class="filter-genre">Filter by Genre</label>
+        <div id="genre-checkboxes">
+
+        </div>
+        <div id="sub-genre-checkboxes">
+
+        </div>
+    </div>
+    <div class="data-slider-container">
+        <label class="filter-date">Filter by Date</label>
+        <div class="date-slider">
+
+            <div id="date-range">
+                <span id="date-min"></span> - <span id="date-max"></span>
+            </div>
+            <div id="slider"></div>
+        </div>
+    </div>
+        </div>
+</div>
+
+
+
+<script type="module" src="logic.js"></script>
+</body>
+</html>

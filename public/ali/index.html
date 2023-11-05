@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble Plot with D3.js</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Styles for the SVG and its elements */
+        svg {
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 8 8px 8px rgba(17, 0, 255, 0.1);
+        }
+
+        /* Styles for the filter bar */
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
+            padding: 5px 50px;
+            position: relative;
+            z-index: 10;
+            border-bottom: 2px solid #ccc;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 8 8px 8px rgba(17, 0, 255, 0.1);
+        }
+
+        /* Styles for individual filter items */
+        .filter-item {
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling for select dropdowns and checkboxes */
+        #filters select,
+        #filters input[type=checkbox],
+        #filters label {
+            margin: 0 10px;
+            font-size: 16px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        #filters select {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px 10px;
+            background: #f9f9f9;
+            outline: none;
+        }
+
+        #filters input[type=checkbox] {
+            accent-color: #007bff;
+        }
+
+        /* Styles for bubbles */
+        .bubble {
+            fill-opacity: 0.9;
+            stroke: #fff;
+            stroke-width: 1.5;
+        }
+
+        .bubble:hover {
+            stroke: #007bff;
+            stroke-width: 2;
+        }
+
+        /* Tooltip styling */
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            width: 140px;
+            height: auto;
+            padding: 8px;
+            font: 13px 'Arial', sans-serif;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            pointer-events: none;
+            box-shadow: 6 6px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add styles for axis titles */
+        .axis-title {
+            fill: #333;
+            font-size: 14px;
+            font-family: 'Arial', sans-serif;
+            text-anchor: middle;
+        }
+
+        /* Styles for the axes titles */
+        .axis-title {
+            fill: #333;
+            font-size: 14px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Additional styles for the axes themselves */
+        .axis path,
+        .axis line {
+            stroke: #333;
+            stroke-width: 1;
+            shape-rendering: crispEdges;
+        }
+
+        .axis .tick text {
+            font-size: 12px;
+        }
+
+        /* ################ Background ############### */
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #backgroundPage {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            /* Your content styles here */
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em; /* 2em is typically large enough for a main title */
+            margin: 0.67em 0; /* Default margin for h1 elements */
+            color: #333; /* A dark color for the text */
+            text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+            /* change the font to kimberly asley */
+            font-family: 'Queensdides', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <iframe id="backgroundPage" src="./background.html"></iframe>
+
+    <header>
+        <h1>Bubble Plot Visualization</h1>
+    </header>
+
+    <div id="filters" class="filter-bar">
+        <div class="filter-item">
+            <label for="continent">Continent:</label>
+            <select id="continent">
+                <option value="all">All</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Africa">Africa</option>
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label><input type="checkbox" id="activeArtist">Active Artists Only</label>
+        </div>
+
+        <div class="filter-item">
+            <label><input type="checkbox" id="heatMapFilter">Heat Map Mode</label>
+        </div>
+
+        <div class="filter-item">
+            <label><input type="checkbox" id="showOnlyPersons">Show only Persons</label>
+        </div>
+
+        <div class="filter-item">
+            <label><input type="checkbox" id="showOnlyGroups">Show only Groups</label>
+        </div>
+    </div>
+
+    <svg width="960" height="450"></svg>
+
+    <script>
+
+        var svg = d3.select("svg"),
+        margin = { top: 20, right: 40, bottom: 80, left: 60 }, // Adjusted margins
+        width = +svg.attr("width") - margin.left - margin.right,
+        height = +svg.attr("height") - margin.top - margin.bottom,
+        originalFillColor = "#000000"; // Store the original fill color which is black
+
+        var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // Load the data and create the bubble plot
+        d3.json("bubble_plot_data.json").then(function(data) {
+            // Define the scales and extents
+            var xScale = d3.scaleLinear()
+                .domain([0, d3.max(data, function(d) { return d.artistRank; })])
+                .range([0, width]);
+
+            var yScale = d3.scaleLinear()
+                .domain([1, d3.max(data, function(d) { return d.lifeSpanInYears; })])
+                .range([height, 0]);
+
+            var radiusScale = d3.scaleSqrt()
+                .domain([1, d3.max(data, function(d) { return d.numberOfSongs; })])
+                .range([5, 40]);
+
+            // Create the color scale for the heatmap
+            var colorScale = d3.scaleSequential(d3.interpolateWarm)
+                .domain([0, 1]); // Initial domain, to be updated with actual scores
+
+            // Function to update the plot based on filters
+            function updatePlot() {
+            // Get the current filter values
+            var continentSelected = d3.select("#continent").property("value");
+            var activeOnly = d3.select("#activeArtist").property("checked");
+            var showOnlyPersons = d3.select("#showOnlyPersons").property("checked");
+            var showOnlyGroups = d3.select("#showOnlyGroups").property("checked");
+            var heatMapOn = d3.select("#heatMapFilter").property("checked");
+
+            // Filter the data based on the current filter values
+            var filteredData = data.filter(function(d) {
+                var continentMatches = (continentSelected === 'all' || d.artistContinent === continentSelected);
+                var activeMatches = (!activeOnly || d.isActive);
+                var rankIsNotZero = d.artistRank !== 0;
+                var lifeSpanNotZero = d.lifeSpanInYears > 0 ;
+                var aa = (!showOnlyPersons || d.type != "Group");
+                var bb = (!showOnlyGroups || d.type == "Group");
+                return continentMatches && activeMatches && rankIsNotZero && lifeSpanNotZero && aa && bb;
+            });
+
+            // Create a scoring function for the heatmap
+            var calculateScore = function(d) {
+                // Assuming both rank and lifespan are equally important, you may adjust the weights as necessary
+                var rankScore = (d.artistRank / d3.max(data, d => d.artistRank)); // Normalized rank score
+                var lifespanScore = (d.lifeSpanInYears / d3.max(data, d => d.lifeSpanInYears)); // Normalized lifespan score
+                return rankScore + lifespanScore; // Combined score
+            };
+
+            // Update the color scale domain based on the filtered data
+            var scoreExtent = d3.extent(filteredData, calculateScore);
+            colorScale.domain(scoreExtent.reverse()); // Reverse to ensure lower scores map to hotter colors
+
+            // Bind the filtered data to the bubbles
+            var bubbles = g.selectAll(".bubble").data(filteredData, function(d) { return d.id; });
+
+            // Handle entering elements
+            var bubblesEnter = bubbles.enter().append("circle")
+                    .attr("class", "bubble")
+                    .attr("cx", function(d) { return xScale(d.artistRank); })
+                    .attr("cy", function(d) { return yScale(d.lifeSpanInYears); })
+                    .attr("r", function(d) { return radiusScale(d.numberOfSongs); })
+                    .on("mouseover", function(event, d) {
+                        tooltip.transition()
+                            .duration(200)
+                            .style("opacity", .9);
+                        tooltip.html(d.name + "<br/>" + d.lifeSpanInYears + " years of carer" + "<br/>Rank: " + Math.round(d.artistRank) + "<br/>Number of Songs: " + d.numberOfSongs)
+                            .style("left", (event.pageX) + "px")
+                            .style("top", (event.pageY - 28) + "px");
+                    })
+                    .on("mouseout", function(d) {
+                        tooltip.transition()
+                            .duration(500)
+                            .style("opacity", 0);
+                    });
+
+            // Handle updating elements
+            bubbles.merge(bubblesEnter)
+                .transition()
+                .duration(500)
+                .attr("cx", function(d) { return xScale(d.artistRank); })
+                .attr("cy", function(d) { return yScale(d.lifeSpanInYears); })
+                .attr("r", function(d) { return radiusScale(d.numberOfSongs); })
+                .style("fill", function(d) {
+                    if (heatMapOn) {
+                        var score = calculateScore(d);
+                        return colorScale(score); // Apply color based on score
+                    } else {
+                        return originalFillColor;
+                    }
+                });
+
+            // Handle exiting elements
+            bubbles.exit()
+                    .transition()
+                    .duration(500)
+                    .attr("r", 0)
+                    .remove();
+            }
+
+            // Add the X Axis and move it 20 pixels down from the original position
+            g.append("g")
+            .attr("transform", "translate(0," + (height + 25) + ")") // Move the axis 20px lower
+            .call(d3.axisBottom(xScale))
+            .append("text")
+            .attr("class", "axis-label")
+            .attr("x", width / 2)
+            .attr("y", 45) // Adjust the label position accordingly
+            .style("text-anchor", "middle")
+            .text("Artist Rank");
+
+            // Add the Y Axis and adjust the y-axis label position
+            g.append("g")
+            .call(d3.axisLeft(yScale))
+            .append("text")
+            .attr("class", "axis-label")
+            .attr("transform", "rotate(-90)")
+            .attr("y", -35)
+            .attr("x", -height / 2)
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text("Lifespan in Years");
+            
+            // Initial plot update
+            updatePlot();
+
+            // Add event listeners for the filters
+            d3.selectAll("#continent, #activeArtist, #heatMapFilter, #showOnlyPersons, #showOnlyGroups").on("change", updatePlot);
+        });
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Label Name Word Cloud</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+
+</head>
+
+<style>
+    body {
+        background-color: #f9f9f9; 
+        font-family:'Times New Roman';       
+    }
+
+    .tooltip {
+        z-index: 1000; 
+        position: absolute;
+        padding: 10px 15px;
+        background-color: rgb(94, 94, 94);
+        border-radius: 8px;
+        font-family:'Times New Roman';
+        font-size: 14px;
+        color:  #ffffff; 
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
+        pointer-events: none; 
+        transition: opacity 0.1s; 
+        border: 1px solid #ddd; 
+    }
+
+    .container {
+        padding: 25px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+        background-color: #ffffff; 
+        border-radius: 10px; 
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .word-cloud {
+        flex: 1; 
+    }
+
+    .filters {
+        border-radius: 8px; 
+        padding-left: 20px;
+        width: 250px; 
+        display: flex;
+        flex-direction: column; 
+        flex-grow: 1;
+    }
+    #filters label {
+        display: block;  
+        margin-bottom: 5px; 
+    }
+
+    #filters input[type="checkbox"] {
+        margin-right: 5px; 
+    }
+
+    #labelCount {
+        text-align: center;
+        font-size: 16px;
+        font-family:'Times New Roman';
+        margin-bottom: 10px;
+    }
+    #maxLabelSize {
+        text-align: center;
+        font-size: 15px;
+        font-family:  'Times New Roman';
+        margin-bottom: 5px;
+    }
+    #minLabelSize {
+        text-align: center;
+        font-size: 15px;
+        font-family:  'Times New Roman';
+        margin-bottom: 5px;
+    }
+    #averageLabelSize {
+        text-align: center;
+        font-size: 15px;
+        font-family:  'Times New Roman';
+        margin-bottom: 5px;
+    }
+    .subgenres {
+        display: none;
+        width: fit-content;
+        position: absolute;
+        background-color: rgb(163, 163, 163);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); 
+        border: 1px solid #ddd;
+        border-radius: 13px ;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .sub-genres-title{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    
+    #filters label, #filters input[type="checkbox"] {
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Times New Roman';
+    }
+
+   
+    .genre:hover .subgenres {
+        display: block;
+    }
+
+    #year-range {
+        width: 80%; 
+        margin: 10px auto;
+    }
+
+    #my_dataviz {
+        border: 8px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(45deg, #f06, rgb(99, 74, 192));
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); 
+    }
+
+#title {
+    font-weight: 700;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(245, 70, 112, 1) 0%, rgba(8, 83, 148, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#Bigtitle{
+    font-weight: 700;
+    font-size: 22px;
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(245, 70, 112, 1) 0%, rgba(8, 83, 148, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.legende{
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+.legend-box {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+  .fake-checkbox {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border: 1px solid #000;
+    display: inline-block;
+  }
+
+  #maxLabelSize-box {
+    background-color: #ff0f00;
+  }
+
+  #minLabelSize-box {
+    background-color: #7CB518;
+  }
+
+  #averageLabelSize-box {
+    background-color: #F2DC18;
+  }
+
+  li {
+    margin-bottom: 4px;
+    font-style: italic;
+  }
+
+</style>
+
+<body>
+    <div class="container">    
+        <div class="word-cloud">
+            <div id="my_dataviz"></div>
+        </div>
+        <div class="filters">
+            <h1 id="Bigtitle" >Labels' Word Cloud</h1> 
+            <div class="legende">
+                <div id="labelCount">Number of labels: 0</div>
+                  <div class="legend-box" >
+                    <span class="fake-checkbox"  id="maxLabelSize-box"></span>
+                    <div id="maxLabelSize">Label with the most artists: 0 artists</div>
+                  </div>
+                  <div class="legend-box" >
+                    <span class="fake-checkbox"  id="averageLabelSize-box"></span>
+                    <div id="averageLabelSize">Other Labels: between 0 and 0 artists</div>
+                  </div>
+                  <div class="legend-box" >
+                    <span class="fake-checkbox" id="minLabelSize-box"></span>
+                    <div id="minLabelSize">Label with the least artist: 0 artists</div>
+                  </div>
+            </div>
+            <div style="margin: 15px 0px;" class="legende">
+            <h3 id="title" >Filter By "Genres"</h1> 
+            <div id="filters">
+                <label class="genre">
+                    <input type="checkbox" value="Rock & Variations" checked> Rock & Variations
+                    <div class="subgenres">
+                        <p class="sub-genres-title">Rock Variations</p>
+                        <ul>
+                            <li>Rock</li>
+                            <li>Alternative Rock</li>
+                            <li>Indie Rock</li>
+                            <li>Pop Rock</li>
+                            <li>Punk Rock</li>
+                            <li>Piano Rock</li>
+                            <li>Hard Rock</li>
+                            <li>Progressive Rock</li>
+                            <li>Post-Punk</li>
+                            <li>Garage Rock</li>
+                        </ul>
+                    </div>
+                    
+                </label>
+                <label class="genre">
+                    <input type="checkbox" value="Pop & Variations" checked> Pop & Variations
+                    <div class="subgenres">
+                        <p class="sub-genres-title">Pop Variations</p>
+                        <ul>
+                            <li>Pop</li>
+                            <li>Indie Pop</li>
+                            <li>Teen Pop</li>
+                            <li>Pop Punk</li>
+                        </ul>
+                    </div>
+                    
+                </label>
+                <label class="genre">
+                    <input type="checkbox" value="Metal & Variations" checked> Metal & Variations
+                    <div class="subgenres">
+                        <p class="sub-genres-title">Metal Variations</p>
+                        <ul>
+                            <li>Deathcore</li>
+                            <li>Metalcore</li>
+                            <li>Heavy Metal</li>
+                            <li>Groove Metal</li>
+                            <li>Progressive Metal</li>
+                            <li>Gothic Metal</li>
+                            <li>Death Metal</li>
+                        </ul>
+                    </div>
+                    
+                </label>
+                <label class="genre">
+                    <input type="checkbox" value="Hip Hop & Rap" checked> Hip Hop & Rap
+                    <div class="subgenres">
+                        <p class="sub-genres-title">Hip Hop & Rap Variations</p>
+                        <ul>
+                            <li>Hip Hop</li>
+                            <li>Gangsta Rap</li>
+                        </ul>
+                    </div>
+                </label>
+                <label class="genre">
+                    <input type="checkbox" value="Electronic & Variations" checked> Electronic & Variations
+                    <div class="subgenres">
+                        <p class="sub-genres-title">Electronic Variations</p>
+                        <ul>
+                            <li>Electronic</li>
+                            <li>Electronic Rock</li>
+                            <li>Electronica</li>
+                            <li>EBM</li>
+                            <li>Electro</li>
+                            <li>Dark Wave</li>
+                            <li>Synthpop</li>
+                            <li>Industrial</li>
+                            <li>Industrial Rock</li>
+                        </ul>
+                    </div>
+                    
+                    
+                </label>
+                <label class="genre">
+                    <input type="checkbox" value="Core & Variations" checked> Core & Variations
+                    <div class="subgenres">
+                        <p class="sub-genres-title">Core Variations</p>
+                        <ul>
+                            <li>Post-Hardcore</li>
+                            <li>Hardcore Punk</li>
+                        </ul>
+                    </div>
+                </label>
+                <label class="genre">
+                    <input type="checkbox" value="World & Regional" checked> World & Regional
+                    <div class="subgenres">
+                        <p class="sub-genres-title">World & Regional Variations</p>
+                        <ul>
+                            <li>Brazilian</li>
+                            <li>MPB</li>
+                            <li>Samba</li>
+                        </ul>
+                    </div>
+                </label>
+                <label class="genre">
+                    <input type="checkbox" value="Other" checked> Other
+                    <div class="subgenres">
+                        <p class="sub-genres-title">Other genres</p>
+                        <ul>
+                            <li>Jazz</li>
+                            <li>Dancehall</li>
+                            <li>Comedy</li>
+                            <li>Dance</li>
+                            <li>Classical</li>
+                            <li>Folk</li>
+                            <li>Singer-Songwriter</li>
+                            <li>Emo</li>
+                            <li>Contemporary Christian</li>
+                            <li>Experimental</li>
+                            <li>Dark Ambient</li>
+                            <li>New Age</li>
+                            <li>Neoclassical</li>
+                            <li>Children's Music</li>
+                        </ul>
+                    </div>                    
+                </label>
+            </div>
+        </div>
+        <div class="legende">
+            <h3 id="title" >Filter By "Years Range"</h1> 
+            <div id="year-range">
+                <div style="margin-bottom: 10px;" id="slider-range"></div>
+                <span id="startYearDisplay">1980</span> - <span id="endYearDisplay">2023</span>
+            </div>
+        </div>
+            
+            
+        </div>
+    </div>
+
+    
+    <script>
+        // Slider initialization
+        $(function() {
+            $("#slider-range").slider({
+                range: true,
+                min: 1980,
+                max: 2023,
+                values: [1980, 2023],
+                slide: function(event, ui) {
+                    $("#startYearDisplay").text(ui.values[0]);
+                    $("#endYearDisplay").text(ui.values[1]);
+                }
+            });
+        });
+    
+        const genreMapping = {
+            "Rock & Variations": ["Rock", "Alternative Rock", "Indie Rock", "Pop Rock", "Punk Rock", "Piano Rock", "Hard Rock", "Progressive Rock", "Post-Punk", "Garage Rock"],
+            "Pop & Variations": ["Pop", "Indie Pop", "Teen Pop", "Pop Punk"],
+            "Metal & Variations": ["Deathcore", "Metalcore", "Heavy Metal", "Groove Metal", "Progressive Metal", "Gothic Metal", "Death Metal"],
+            "Hip Hop & Rap": ["Hip Hop", "Gangsta Rap"],
+            "Electronic & Variations": ["Electronic", "Electronic Rock", "Electronica", "EBM", "Electro", "Dark Wave", "Synthpop", "Industrial", "Industrial Rock"],
+            "Core & Variations": ["Post-Hardcore", "Hardcore Punk"],
+            "World & Regional": ["Brazilian", "MPB", "Samba"],
+            "Other": ["Jazz", "Dancehall", "Comedy", "Dance", "Classical", "Folk", "Singer-Songwriter", "Emo", "Contemporary Christian", "Experimental", "Dark Ambient", "New Age", "Neoclassical", "Children's Music"]
+        };
+
+        function getSelectedGenres() {
+            return Array.from(document.querySelectorAll('#filters input:checked'))
+                .flatMap(input => genreMapping[input.value]);
+        }
+
+    
+        function updateWordCloud() {
+            d3.json('artists.json').then(data => {
+                const selectedGenres = getSelectedGenres();
+                const selectedYearRange = [
+                    $("#slider-range").slider("values", 0),
+                    $("#slider-range").slider("values", 1)
+                ];
+                const labelData = Object.entries(data)
+                .filter(([label, info]) => 
+                    info.Artists.some(artist => 
+                        Math.max(...artist.PublicationDates.map(Number)) >= selectedYearRange[0] &&
+                        Math.min(...artist.PublicationDates.map(Number)) <= selectedYearRange[1]
+                    )
+                )
+                .filter(([label, info]) => 
+                    info.GenresFromArtistes.some(genre => 
+                        selectedGenres.includes(genre)
+                    )
+                )
+                .map(([label, info]) => ({
+                    text: label,
+                    originalSize: info.NbTotalArtiste,
+                    topThreeRankedSongs: info.topThreeRankedSongs,
+                    size: info.Artists.filter(artist => 
+                        Math.max(...artist.PublicationDates.map(Number)) >= selectedYearRange[0] &&
+                        Math.min(...artist.PublicationDates.map(Number)) <= selectedYearRange[1]
+                    ).length // adjust size based on filtered artists
+                }));
+
+                   // Calculate max and min label sizes
+                   const maxLabel = Math.max(...labelData.map(d => d.size));
+                    const minLabel = Math.min(...labelData.map(d => d.size));
+    
+                    // Update the text of the respective div elements
+                    document.getElementById('maxLabelSize').innerText = `Label with the most artists: ${maxLabel} artists`;
+                    document.getElementById('minLabelSize').innerText = `Label with the least artist: ${minLabel} artist`;
+                    document.getElementById('averageLabelSize').innerText = `Other Labels: between ${minLabel+1} and ${maxLabel-1} artists`;
+                    document.getElementById('labelCount').innerText = `Number of labels: ${labelData.length}`;
+    
+                const labelSizeScale = d3.scaleLinear()
+                    .domain([0, d3.max(labelData, d => d.size)])
+                    .range([10, 50]);
+    
+                d3.select("svg").remove();
+    
+                const width = 1000;
+                const height = 550;
+                
+                
+                
+    
+                // D3 Cloud setup
+                const layout = d3.layout.cloud()
+                    .size([width, height])
+                    .words(labelData.map(d => {
+                        return { 
+                            text: d.text, 
+                            size: labelSizeScale(d.size), 
+                            NbTotalArtiste: d.size,
+                            topArtists: d.topThreeRankedSongs,
+                        };
+                    }))
+                    .padding(5)
+                    .rotate(function() { return ~~(Math.random() * 2) * 90; })
+                    .fontSize(d => d.size)
+                    .on("end", draw);
+    
+                layout.start();
+
+                
+    
+                function draw(words) {
+                const svg = d3.select("#my_dataviz")
+                    .append("svg")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .append("g")
+                    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+                    
+                    const maxLabelObject = labelData.reduce((max, curr) => curr.size > max.size ? curr : max, {
+                        size: -Infinity
+                    });
+
+                    // Extracting the size value and ensuring it's a number
+                    const maxLabelSize = Number(maxLabelObject.size);
+                    console.log('max label size is:', maxLabelSize);
+
+                    const minLabelObject = labelData.reduce((min, curr) => curr.size < min.size ? curr : min, {
+                        size: Infinity
+                    });
+                    // Extracting the size value and ensuring it's a number
+                    const minLabelSize = Number(minLabelObject.size);
+                    console.log('min label size is:', minLabelSize);
+
+
+                const tooltip = d3.select("body").append("div")
+                    .attr("class", "tooltip")
+                    .style("opacity", 0);
+                
+                const labels = svg.selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .style("font-family", "Times New Roman")
+                    .style("font-weight", "bold")
+                    .style("font-size", d => (d.size) + "px")
+                    .style("fill", d => {
+                        if (d.NbTotalArtiste === maxLabelSize) {
+                            return '#ff0f00';
+                        } else if (d.NbTotalArtiste === minLabelSize) {
+                            return '#7CB518';
+                        } else {
+                            return '#F2DC18';
+                        }
+                    })     
+                    .attr("text-anchor", "middle")
+                    .attr("transform", d => "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")")
+                    .text(d => d.text)
+                    .on("mouseover", function(event, d) {
+                        tooltip.transition()
+                            .duration(200)
+                            .style("opacity", 0.9);
+                             // Check if topThreeRankedSongs is defined and is an array
+                             // Check if 'topThreeRankedSongs' is defined and is an array.
+                             let topArtistsContent = "";
+                            let rankSum = 0;
+                            if (Array.isArray(d.topArtists) && d.topArtists.length > 0) {
+                                topArtistsContent = d.topArtists.map((song, index) => {
+                                    rankSum += song.rank;
+                                    return `${index + 1}. "${song.title}" - Rank: ${song.rank || 'N/A'}`;
+                                }).join("<br>");
+                            } else {
+                                topArtistsContent = "No data available";
+                                // Debugging: Log a warning to the console.
+                                console.warn("No topArtists data available for:", d);
+                            }
+
+                            tooltip.html(`
+                                <div style="padding: 10px; border-radius: 4px; background: rgba(250, 250, 250, 0.9); color: #333;">
+                                    <strong>Total Artists:</strong> ${d.NbTotalArtiste}<br><br>
+                                    <strong>Top Artist :${d.topArtists[0].artiste}</strong> 
+                                    <ul>
+                                    <li>
+                                    <div style="margin-left: 10px; margin-top: 5px;">
+                                        from: ${d.topArtists[0].Country || 'Country not provided'}</div>
+                                    </li>
+                                    <br>
+                                    <li>
+                                    <strong>Top 3 Songs:</strong>
+                                    <div style="margin-left: 10px; margin-top: 5px;">
+                                        ${topArtistsContent}
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div style="margin-top: 10px;">
+                                        <strong>Average Rank:</strong> ${(rankSum / 3).toFixed(0)}
+                                    </div>
+                                    </li>
+                                    </ul>
+                                </div>
+                            `)
+                            .style("left", `${event.pageX + 40}px`)
+                                                        .style("top", `${event.pageY + 30}px`)
+                            .style("position", "absolute")
+                            .style("text-align", "left")
+                            .style("width", "auto")
+                            .style("max-width", "300px")
+                            .style("pointer-events", "none");
+
+                            
+
+                            let dx = 0; // Horizontal shift
+                            let dy = 0; // Vertical shift
+
+                            const enlargedFontSize = d.size * 1.5;
+                            const textWidth = this.getComputedTextLength();
+
+                        
+                            d3.select(this)
+                            .style("font-size", d => (d.size * 2) + "px"); 
+                            
+                        labels.style("opacity", label => label.text === d.text ? 1 : 0.1);
+                    })
+                    .on("mouseout", function() {
+                        tooltip.transition()
+                            .duration(500)
+                            .style("opacity", 0);
+                            d3.select(this)
+                            .style("font-size", d => (d.size) + "px");
+                            
+                        labels.style("opacity", 1);
+                    });
+            }
+
+            });
+        }
+    
+        document.querySelectorAll('#filters input').forEach(input => {
+            input.addEventListener('change', updateWordCloud);
+        });
+    
+        updateWordCloud();
+    
+        $("#slider-range").on("slidechange", function(event, ui) {
+            updateWordCloud();
+        });
+    
+    </script>
+    
+</body>
+
+</html>
+
