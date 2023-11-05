@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
-
-	<!-- import the d3 library -->
+	<title>Accueil</title>
+	<!-- Import d3.js if needed -->
 	<!-- <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script> -->
+
 	<script type='text/javascript' src='lib/d3.v5.min.js'></script>
 
 	<!-- style sheet -->
@@ -14,35 +14,45 @@
 
 <body>
 
+<div class="container">
+	<h1>Informations Visualisation</h1>
 
-<!-- Add a button to navigate to the other HTML file -->
-<button onclick="navigateToYoussefPage()">Go to Youssef's Page</button>
-<button onclick="navigateToAliPage()">Bubble Plot</button>
-<button onclick="navigateToMarouanePage()">Cloud Visualisation</button>
-<button onclick="navigateToOmarPage()">Stacked Area</button>
+	<div class="navigation-grid">
+		<div class="circle" onclick="navigateToYoussefPage()" style="background-image: url('assets/circle-packing.png');">
+			<span class="circle-title">Circle Packing</span>
+		</div>
+		<div class="circle" onclick="navigateToAliPage()" style="background-image: url('assets/bubbleChart.png');">
+			<span class="circle-title">Bubble Plot</span>
+		</div>
+		<div class="circle" onclick="navigateToMarouanePage()" style="background-image: url('assets/cloudword.jpg');">
+			<span class="circle-title">Cloud Visualisation</span>
+		</div>
+		<div class="circle" onclick="navigateToOmarPage()" style="background-image: url('assets/stackedarea.png');">
+			<span class="circle-title">Stacked Area</span>
+		</div>
+	</div>
+	
+</div>
 
 <script>
-	// JavaScript function to navigate to the other HTML file
+	// JavaScript functions to navigate to the other HTML files
 	function navigateToYoussefPage() {
-		// Redirect to the other HTML file
 		window.location.href = '/youssef';
 	}
 
 	function navigateToAliPage() {
-		// Redirect to the other HTML file
 		window.location.href = '/ali';
 	}
 
-	// JavaScript function to navigate to the other HTML file
 	function navigateToMarouanePage() {
-		// Redirect to the other HTML file
 		window.location.href = '/marouane';
 	}
 
 	function navigateToOmarPage() {
-		// Redirect to the other HTML file
 		window.location.href = '/omar';
 	}
+
 </script>
+
 </body>
 </html>
