@@ -1,4 +1,3 @@
-
 (async function() {
     try {
 
@@ -13,76 +12,52 @@
             .attr("height", height)
 
 // create dummy data -> just one element per circle
-        var data = {
-            "name": "World",
-            "children": [
-                {
-                    "name": "Europe",
-                    "type": "continent",
-                    "children": [
-                        {
-                            "name": "Rock",
-                            "type": "genre",
-                            "NbArtiste": 100,
-                            "NbDezerFan": 10000
-                        },
-                        {
-                            "name": "Rap",
-                            "type": "genre",
-                            "NbArtiste": 30,
-                            "NbDezerFan": 200
-                        },
-                        {
-                            "name": "Funk",
-                            "type": "genre",
-                            "NbArtiste": 200,
-                            "NbDezerFan": 1000
-                        }
-                    ]
-                },
-                {
-                    "name": "Asia",
-                    "type": "continent",
-                    "children": [
-                        {
-                            "name": "Hip Hop",
-                            "type": "genre",
-                            "NbArtiste": 10,
-                            "NbDezerFan": 20000
-                        }
-                    ]
-                },
-                {
-                    "name": "Africa",
-                    "type": "continent",
-                    "children": [
-                        {
-                            "name": "Rai",
-                            "type": "genre",
-                            "NbArtiste": 98,
-                            "NbDezerFan": 10
-                        }
-                    ]
-                }
-            ]
-        };
-
+        var data = await d3.json("../data/grouped_circular_data.json");
 
         var packLayout = d3.pack()
             .size([width, height]);
 
         var rootNode = d3.hierarchy(data)
-        console.log(rootNode);
 
-        rootNode.sum(function(d) {
-            return d.NbDezerFan;
-        });
+        rootNode.sum(sizeCircle);
 
         packLayout(rootNode);
 
+
+        var keysContinentFilters = rootNode.data.children.map(item => item.name);
+        const { minYear, maxYear } = findMinMaxPublicationYears(data);
+        var lastMaxYear = maxYear;
+        var lastMinYear = minYear;
+        $( function() {
+            $( "#slider-range" ).slider({
+                range: true,
+                min: minYear,
+                max: maxYear,
+                values: [ minYear, maxYear ],
+                slide: function( event, ui ) {
+                    $( "#sliderTxt" ).val(ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+                    lastMaxYear =  ui.values[ 1 ];
+                    lastMinYear = ui.values[ 0 ];
+                    updateYears(ui.values[ 0 ], ui.values[ 1 ])
+                }
+            });
+            $( "#sliderTxt" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+                " - " + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+
+
+        function sizeCircle(d) {
+            if (d.PublicationDates)
+                return d.PublicationDates.map(d=>d.NbDezerFan ?? 0).reduce((accumulator, current) => {
+                    return accumulator + current;
+                }, 0);
+            else
+                return 0
+        };
+
         // Color palette for continents?
         var color = d3.scaleOrdinal()
-            .domain(["Asia", "Europe", "Africa", "Oceania", "Americas"])
+            .domain(keysContinentFilters)
             .range(d3.schemeSet1);
 
         var Tooltip = d3.select("#GroupedCircularVisualisation")
@@ -118,66 +93,189 @@
         }
 
 
-        var nodes = svg.append('g')
-            .selectAll('g')
-            .data(rootNode.descendants())
-            .join('g')
-            .style("fill", function(d){
-                if (d.data.type=="continent")
-                    return color(d.data.name)
-                else if (d.data.type=="genre")
-                    return "rgba(0,0,0,0.5";
-                else
-                    return "transparent";
-            })
-            .style("fill-opacity", 0.8)
-            .attr("stroke", "black")
-            .style("stroke-width", function(d){return d.data.type== undefined ? "0" : "1" ;})
-            .attr('transform', function(d) {return 'translate(' + [d.x, d.y] + ')'})
-            .on("mouseover", mouseover)
-            .on("mousemove", mousemove)
-            .on("mouseleave", mouseleave)
 
-        nodes
-            .append('circle')
-            .attr('r', function(d) { return d.r; })
+        function displayDatas(datas) {
+             svg.append('g')
+                 .attr("id","wrapperDatas")
+                .selectAll('g')
+                .data(datas)
+                .join('g')
+                .style("fill", function (d) {
+                    if (d.data.type == "continent")
+                        return color(d.data.name)
+                    else if (d.data.type == "genre")
+                        return "rgba(0,0,0,0.5";
+                    else
+                        return "transparent";
+                })
+                .attr("class", d => d.data.type)
+                .attr("data-name", d => d.data.name)
+                .attr("data-parent", d => d.parent ? d.parent.data.name : "")
+                .style("fill-opacity", 0.8)
+                .attr("stroke", "black")
+                .style("stroke-width", function (d) {
+                    return d.data.type == undefined ? "0" : "1";
+                })
+                .attr('transform', function (d) {
+                    return 'translate(' + [d.x, d.y] + ')'
+                })
+                .on("mouseover", mouseover)
+                .on("mousemove", mousemove)
+                .on("mouseleave", mouseleave)
+                .append('circle')
+                .attr('r', function (d) {
+                    return d.r;
+                })
+        }
+
+        displayDatas(rootNode.descendants())
 
 
-        var keys = rootNode.data.children.map(item => item.name);
-
-// Usually you have a color scale in your chart already
-        var color = d3.scaleOrdinal()
-            .domain(keys)
-            .range(d3.schemeSet1);
-
-// Add one dot in the legend for each name.
         var size = 20
-        svg.selectAll("mydots")
-            .data(keys)
+
+        var filters = d3.select("#GroupedCircularVisualisation")
+            .append("div")
+            .attr("class", "filterContinent")
+            .attr("width", 200)
+            .attr("height", 200)
+
+        filters.selectAll("mydots")
+            .data(keysContinentFilters)
             .enter()
-            .append("rect")
+            .append('label')
+            .text(function(d) { return d; })
+            .style("color", function(d){ return color(d)})
+            .style("font-weight", "bold")
+            .style("--background-color-filter", function(d){ return color(d)})
+            .attr("class", "continent-filter")
+            .append("input")
+            .attr("type", "checkbox")
+            .attr("checked", true)
+            .attr("value", d=>d)
             .attr("x", 100)
             .attr("y", function(d,i){ return 100 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
             .attr("width", size)
             .attr("height", size)
-            .style("fill", function(d){ return color(d)})
 
-// Add one dot in the legend for each name.
-        svg.selectAll("mylabels")
-            .data(keys)
-            .enter()
-            .append("text")
-            .attr("x", 100 + size*1.2)
-            .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
-            .style("fill", function(d){ return color(d)})
-            .text(function(d){ return d})
-            .attr("text-anchor", "left")
-            .style("alignment-baseline", "middle")
+        function updateYears(min, max){
+            setTimeout(function () {
+                var filteredData = filterByPublicationYearRange(data,min,max);
+                rootNode = d3.hierarchy(filteredData)
 
+                rootNode.sum(sizeCircle);
 
+                packLayout(rootNode);
+                d3.select("#wrapperDatas").remove();
+                displayDatas(rootNode.descendants());
+            },0)
+        }
+
+        function updateContinent(withDelay=true){
+
+            //var timeOut = withDelay ? 400 : 0;
+//
+            //d3.selectAll(".continent-filter input").each(function(d){
+            //    cb = d3.select(this);
+            //    grp = cb.property("value")
+//
+            //    // If the box is check, I show the group
+            //    if(cb.property("checked")){
+            //        svg.selectAll(".continent[data-name='"+grp+"'] *").transition().duration(timeOut).style("opacity", 1)
+            //        svg.selectAll(".genre[data-parent='"+grp+"'] *").transition().duration(timeOut).style("opacity", 1)
+//
+            //    }else{
+            //        svg.selectAll(".continent[data-name='"+grp+"'] *").transition().duration(timeOut).style("opacity", 0)
+            //        svg.selectAll(".genre[data-parent='"+grp+"'] *").transition().duration(timeOut).style("opacity", 0)
+            //    }
+            //})
+            setTimeout(function (){
+                var continentToHide = d3.selectAll(".continent-filter input:not(:checked)").data()
+                    .map(function(d) { return d; })
+
+                var filteredData = {
+                    ...data,
+                    children: data.children.filter(child => !(child.type === "continent" && continentToHide.includes(child.name)))
+                };
+                rootNode = d3.hierarchy(filteredData)
+
+                rootNode.sum(sizeCircle);
+
+                packLayout(rootNode);
+                d3.select("#wrapperDatas").remove();
+                displayDatas(rootNode.descendants())
+            },0)
+        }
+
+        d3.selectAll(".continent-filter input").on("change",function (){
+            updateContinent(false);
+            updateYears(lastMinYear,lastMaxYear)
+
+        });
+
+        updateContinent(false);
+        updateYears(minYear,maxYear)
 
 
     } catch(error) {
         console.log(error);
     }
 })();
+
+function findMinMaxPublicationYears(data) {
+    let minYear = Infinity; // Initialize to positive infinity
+    let maxYear = -Infinity; // Initialize to negative infinity
+
+    function traverse(node) {
+        if (node.PublicationDates) {
+            for (const publication of node.PublicationDates) {
+                if (publication.yearOfPublication < minYear) {
+                    minYear = publication.yearOfPublication;
+                }
+                if (publication.yearOfPublication > maxYear) {
+                    maxYear = publication.yearOfPublication;
+                }
+            }
+        }
+
+        if (node.children) {
+            for (const child of node.children) {
+                traverse(child);
+            }
+        }
+    }
+
+    traverse(data);
+    return { minYear, maxYear };
+}
+
+function filterByPublicationYearRange(data, minYear, maxYear) {
+    var continentToHide = d3.selectAll(".continent-filter input:not(:checked)").data()
+        .map(function(d) { return d; })
+    // Create a deep copy of the data object
+    const filteredData = {
+        ...data,
+        children: data.children.filter(continent => !continentToHide.includes(continent.name)).map(continent => {
+            const filteredChildren = filterArrayByPublicationYearRange(continent.children, minYear, maxYear);
+
+            return {
+                ...continent,
+                children: filteredChildren.length > 0 ? filteredChildren : undefined
+            };
+        }).filter(continent => continent.children !== undefined)
+    };
+
+    return filteredData;
+}
+function filterArrayByPublicationYearRange(arr, min, max) {
+    return arr.filter((item) => {
+        if (item.PublicationDates) {
+            for (const publication of item.PublicationDates) {
+                const year = publication.yearOfPublication;
+                if (year >= min && year <= max) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    });
+}

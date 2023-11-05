@@ -6,13 +6,39 @@
 	<script src="../public/lib/d3.v5.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 <body>
 <header>
 	<h1>Grouped circular Visualization by Localisation</h1>
 </header>
 
-<div id="GroupedCircularVisualisation"></div>
+<div class="wrapperCircularVisualisation">
+	<div id="GroupedCircularVisualisation"></div>
+	<div class="filterWrapper">
+		<div class="filterTitleWrapper"><h1>Filtres</h1></div>
+		<div class="filters">
+			<div class="activityYears">
+				<label for="sliderTxt">By Years Activity
+					<input type="text" id="sliderTxt" readonly style="border:0; color:#f6931f; font-weight:bold;">
+				</label>
+				<div id="slider-range"></div>
+			</div>
+			<div class="circleDatas">
+				<label for="circleSizeInfo">Datas of Circle Size
+					<select type="text" id="circleSizeInfo">
+						<option value="NbArtiste">Number of Artistes</option>
+						<option value="NbDezerFan">Number of Fans</option>
+						<option value="NbArtistesAlive">Number of Song Artiste alived</option>
+					</select>
+				</label>
+			</div>
+		</div>
+	</div>
+
+</div>
 <script src="./script.js"></script>
 
 </body>
