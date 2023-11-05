@@ -14,6 +14,14 @@ app.get('/youssef', (req, res) => {
   res.sendFile(__dirname + '/youssef/index.html');
 });
 
+app.get('/marouane', (req, res) => {
+  res.sendFile(__dirname + '/public/marouane/index.html');
+});
+
+app.get('/ali', (req, res) => {
+  res.sendFile(__dirname + '/public/ali/index.html');
+});
+
 app.get('/omar', (req, res) => {
   res.sendFile(__dirname + '/public/omar/index.html');
 });
