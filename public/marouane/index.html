@@ -413,11 +413,11 @@
                     const minLabel = Math.min(...labelData.map(d => d.size));
     
                     // Update the text of the respective div elements
-                    document.getElementById('maxLabelSize').innerText = `Label with the most artists: ${maxLabel} artists`;
-                    document.getElementById('minLabelSize').innerText = `Label with the least artist: ${minLabel} artist`;
-                    document.getElementById('averageLabelSize').innerText = `Other Labels: between ${minLabel+1} and ${maxLabel-1} artists`;
-                    document.getElementById('labelCount').innerText = `Number of labels: ${labelData.length}`;
-    
+                    d3.select("#maxLabelSize").text(`Label with the most artists: ${maxLabel} artists`);
+                    d3.select("#minLabelSize").text(`Label with the least artist: ${minLabel} artist`);
+                    d3.select("#averageLabelSize").text(`Other Labels: between ${minLabel+1} and ${maxLabel-1} artists`);
+                    d3.select("#labelCount").text(`Number of labels: ${labelData.length}`);
+
                 const labelSizeScale = d3.scaleLinear()
                     .domain([0, d3.max(labelData, d => d.size)])
                     .range([10, 50]);
