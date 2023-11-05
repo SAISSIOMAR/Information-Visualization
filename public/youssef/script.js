@@ -12,7 +12,7 @@
             .attr("height", height)
 
 // create dummy data -> just one element per circle
-        var data = await d3.json("../data/grouped_circular_data.json");
+        var data = await d3.json("grouped_circular_data.json");
 
         var packLayout = d3.pack()
             .size([width, height]);

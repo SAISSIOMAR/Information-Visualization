@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/youssef', (req, res) => {
-  res.sendFile(__dirname + '/youssef/index.html');
+  res.sendFile(__dirname + '/public/youssef/index.html');
 });
 
 app.get('/marouane', (req, res) => {
