@@ -1,0 +1,229 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    text-align: center;
+}
+
+#GroupedCircularVisualisation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.filterContinent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.02);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+}
+
+.continent-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.continent-filter input{
+    display: none;
+}
+
+.continent-filter:after{
+    content:"";
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--background-color-filter);
+}
+
+
+.continent-filter:not(:has(input:checked)){
+    opacity: 0.3;
+}
+
+#GroupedCircularVisualisation:has(.genre:hover) .genre:not(:hover){
+    opacity: 0.2;
+}
+
+.wrapperCircularVisualisation{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.filterWrapper, #GroupedCircularVisualisation{
+    padding: 30px;
+    min-width: 150px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.02);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.filterTitleWrapper h1{
+    text-align: center;
+    font-size: x-large;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: #553c9a;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.activityYears{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#sliderTxt{
+    text-align: center;
+    background-color: transparent;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.circleDatas{
+width: 100%;
+}
+
+.circleDatas label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+#circleSizeInfo{
+    color: #f6931f;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.wrapperHeatMap{
+    width: 100%;
+}
+
+.wrapperHeatMap label{
+    display: flex;
+    justify-content: space-between;
+}
+
+#gradient-bar {
+    height: 200px;
+    width: 15px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(8, 48, 107), rgb(243, 248, 254));
+}
+
+.card {
+    width: 300px;
+    color: white;
+}
+
+#legend {
+    position: relative;
+}
+
+.indicator {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    bottom: 0.6em;
+    left: -20px;
+    right: 0px;
+    width: 1em;
+    border-top: 1.5px solid white;
+}
+.scale {
+    position: relative;
+}
+
+.card-body {
+    background-color: #2a4169;
+}
+
+.advice .icon {
+    fill: white;
+    margin: 0;
+}
+
+.sign {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50px;
+}
+.warning {
+    background-color: #da4545;
+}
+.success {
+    background-color: #6dc446;
+}
+.advice-text {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.scale{
+    margin-top: 30px;
+}
+
+.wrapperHeatMap, label{
+    font-weight: bold;
+}
+
+.home-button {
+    background-color: #000000;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

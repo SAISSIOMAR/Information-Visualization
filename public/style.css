@@ -1,3 +1,35 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    color: #553c9a;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    background: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navigation-grid{
+    padding: 30px;
+    min-width: 150px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.02);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
 body, html {
 	margin: 0;
 	padding: 0;

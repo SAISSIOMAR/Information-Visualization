@@ -9,14 +9,24 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
 <header>
-	<h1>Grouped circular Visualization by Localisation</h1>
 </header>
 
 <div class="wrapperCircularVisualisation">
-	<div id="GroupedCircularVisualisation"></div>
+	<button class="home-button" onclick="navigateToHomePage()">
+		<i class="fas fa-home"></i>
+	</button>
+
+	<script>function navigateToHomePage() {
+		window.location.href = '/';
+	}</script>
+	<div id="GroupedCircularVisualisation">
+		<h1>Grouped circular Visualization by Localisation</h1>
+	</div>
 	<div class="filterWrapper">
 		<div class="filterTitleWrapper"><h1>Filtres</h1></div>
 		<div class="filters">
@@ -27,13 +37,25 @@
 				<div id="slider-range"></div>
 			</div>
 			<div class="circleDatas">
-				<label for="circleSizeInfo">Datas of Circle Size
+				<label for="circleSizeInfo">Info of Circle Size
 					<select type="text" id="circleSizeInfo">
-						<option value="NbArtiste">Number of Artistes</option>
-						<option value="NbDezerFan">Number of Fans</option>
-						<option value="NbArtistesAlive">Number of Song Artiste alived</option>
+						<option value="NbArtiste">Number of artists</option>
+						<option value="NbArtistesAlive">Number of living artists</option>
 					</select>
 				</label>
+			</div>
+			<div class="wrapperHeatMap">
+				<label for="heatMapDeezerFans">Display genre popularity
+					<input type="checkbox" id="heatMapDeezerFans"/>
+				</label>
+				<div class="scale">
+					<div id="gradient-bar"></div>
+					<div class="indicator">Very High</div>
+					<div class="indicator">High</div>
+					<div class="indicator">Medium</div>
+					<div class="indicator">Low</div>
+					<div class="indicator">Very Low</div>
+				</div>
 			</div>
 		</div>
 	</div>

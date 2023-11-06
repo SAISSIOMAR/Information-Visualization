@@ -1,9 +1,22 @@
+var gradientBar = document.getElementById("gradient-bar");
+var barHeight = gradientBar.offsetHeight;
+var indicators = document.getElementsByClassName("indicator");
+var numberOfIndicators = indicators.length;
+var counter = 0;
+for (var x = 0; x < numberOfIndicators; x++) {
+    indicators[x].style.top = counter + "px";
+    counter += barHeight / numberOfIndicators + 3;
+}
+
+$(gradientBar).parent().hide();
+
 (async function() {
     try {
 
         // set the dimensions and margins of the graph
         var width = 500
         var height = 500
+
 
 // append the svg object to the body of the page
         var svg = d3.select("#GroupedCircularVisualisation")
@@ -15,7 +28,13 @@
         var data = await d3.json("grouped_circular_data.json");
 
         var packLayout = d3.pack()
-            .size([width, height]);
+            .size([width, height]).padding( function(d) {
+            if (d.depth == 1 && d.children.length==1) {
+                return 10;
+            }
+            else
+                return 0;
+        });
 
         var rootNode = d3.hierarchy(data)
 
@@ -24,8 +43,15 @@
         packLayout(rootNode);
 
 
+
         var keysContinentFilters = rootNode.data.children.map(item => item.name);
+
+        const { minFans, maxFans } = findMinMaxDeezerFans(data);
+        const colorScale = d3.scaleSequential(d3.interpolateBlues)
+            .domain([minFans, maxFans]);
+
         const { minYear, maxYear } = findMinMaxPublicationYears(data);
+        console.log(minYear);
         var lastMaxYear = maxYear;
         var lastMinYear = minYear;
         $( function() {
@@ -47,10 +73,49 @@
 
 
         function sizeCircle(d) {
-            if (d.PublicationDates)
-                return d.PublicationDates.map(d=>d.NbDezerFan ?? 0).reduce((accumulator, current) => {
+            if (d.PublicationDates) {
+                var map;
+                switch (document.getElementById("circleSizeInfo").value){
+                    case "NbArtistesAlive":
+                        map = d.PublicationDates.map(d => d.NbArtistesAlive ?? 0);
+                        break;
+                    default:
+                        map = d.PublicationDates.map(d => d.NbArtiste ?? 0);
+                        break;
+                }
+                return map.reduce((accumulator, current) => {
                     return accumulator + current;
                 }, 0);
+            }
+            else
+                return 0
+        };
+
+        function sizeCircleArtistesAlive(d) {
+            if (d.PublicationDates) {
+                return d.PublicationDates.map(d => d.NbArtistesAlive ?? 0).reduce((accumulator, current) => {
+                    return accumulator + current;
+                }, 0);
+            }
+            else
+                return 0
+        };
+        function sizeCircleArtistes(d) {
+            if (d.PublicationDates) {
+                return d.PublicationDates.map(d => d.NbArtiste ?? 0).reduce((accumulator, current) => {
+                    return accumulator + current;
+                }, 0);
+            }
+            else
+                return 0
+        }
+
+        function nbDeezerFans(d) {
+            if (d.PublicationDates) {
+                return d.PublicationDates.map(d => d.NbDezerFan ?? 0).reduce((accumulator, current) => {
+                    return accumulator + current;
+                }, 0);
+            }
             else
                 return 0
         };
@@ -58,7 +123,7 @@
         // Color palette for continents?
         var color = d3.scaleOrdinal()
             .domain(keysContinentFilters)
-            .range(d3.schemeSet1);
+            .range(d3.schemeSet2);
 
         var Tooltip = d3.select("#GroupedCircularVisualisation")
             .append("div")
@@ -80,7 +145,9 @@
         var mousemove = function(d) {
             if (d.data.type=="genre") {
                 Tooltip
-                    .html('<u>' + d.data.name + '</u>')
+                    .html('<u>Genre</u>'+ ': '+d.data.name+'<br><b>Nb Artistes: '+sizeCircleArtistes(d.data)+'</b><br>' +
+                        '<b>Nb Artistes Alive: '+sizeCircleArtistesAlive(d.data)+'</b><br' +
+                        '><b>Nb Fans: '+nbDeezerFans(d.data)+'</b>' )
                     .style("left", (event.pageX+10) + "px")
                     .style("top", (event.pageY)+10 + "px")
             }
@@ -92,9 +159,20 @@
             }
         }
 
+        function ColorFans(d){
+            if (!document.getElementById("heatMapDeezerFans").checked){
+                $(".wrapperHeatMap .scale").hide();
+                return "rgba(0,0,0,0.5)";
+            }
+            else
+                $(".wrapperHeatMap .scale").show();
 
+            var res = nbDeezerFans(d);
+            return colorScale(res);
+        }
 
         function displayDatas(datas) {
+
              svg.append('g')
                  .attr("id","wrapperDatas")
                 .selectAll('g')
@@ -103,15 +181,16 @@
                 .style("fill", function (d) {
                     if (d.data.type == "continent")
                         return color(d.data.name)
-                    else if (d.data.type == "genre")
-                        return "rgba(0,0,0,0.5";
+                    else if (d.data.type == "genre") {
+                        return ColorFans(d.data);
+                    }
                     else
                         return "transparent";
                 })
                 .attr("class", d => d.data.type)
                 .attr("data-name", d => d.data.name)
                 .attr("data-parent", d => d.parent ? d.parent.data.name : "")
-                .style("fill-opacity", 0.8)
+                .style("fill-opacity", 1)
                 .attr("stroke", "black")
                 .style("stroke-width", function (d) {
                     return d.data.type == undefined ? "0" : "1";
@@ -206,14 +285,13 @@
             },0)
         }
 
-        d3.selectAll(".continent-filter input").on("change",function (){
+        d3.selectAll(".continent-filter input, #circleSizeInfo, #heatMapDeezerFans").on("change",function (){
             updateContinent(false);
             updateYears(lastMinYear,lastMaxYear)
-
         });
 
         updateContinent(false);
-        updateYears(minYear,maxYear)
+        updateYears(minYear,maxYear);
 
 
     } catch(error) {
@@ -246,6 +324,33 @@ function findMinMaxPublicationYears(data) {
 
     traverse(data);
     return { minYear, maxYear };
+}
+
+function findMinMaxDeezerFans(data) {
+    let minFans = Infinity; // Initialize to positive infinity
+    let maxFans = -Infinity; // Initialize to negative infinity
+
+    function traverseFans(node) {
+        if (node.PublicationDates) {
+            for (const publication of node.PublicationDates) {
+                if (publication.NbDezerFan < minFans) {
+                    minFans = publication.NbDezerFan;
+                }
+                if (publication.NbDezerFan > maxFans) {
+                    maxFans = publication.NbDezerFan;
+                }
+            }
+        }
+
+        if (node.children) {
+            for (const child of node.children) {
+                traverseFans(child);
+            }
+        }
+    }
+
+    traverseFans(data);
+    return { minFans: minFans, maxFans: maxFans };
 }
 
 function filterByPublicationYearRange(data, minYear, maxYear) {
